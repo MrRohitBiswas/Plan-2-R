@@ -30,13 +30,10 @@ export default function Navbar() {
       {/* container-fluid */}
         {/* <div className=""> */}
           <div className="logo">
-            <Link to="/Home">Plan-2R</Link>
+            <Link to="/Services">Plan-2R</Link>
           </div>
           <div id="mainListDiv" className={menuClass}>
             <ul className="navlinks">
-              <li>
-                <Link to="/Home">Home</Link>
-              </li>
               <li>
                 <Link to="/Services">Services</Link>
               </li>
