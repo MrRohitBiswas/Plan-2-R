@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { useLocation, BrowserRouter as Router, Switch, Routes} from 'react-router-dom';
+import { useLocation, Switch} from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
@@ -7,8 +7,9 @@ import Navbar from "./components/Navbar";
 import Services from './components/Services'
 import LogReg from './components/LogReg';
 import ContactUs from './components/ContactUs';
+import SearchState from './components/SearchState'
 
-import HomePage from './components/Home';
+// import HomePage from './components/Home';
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
@@ -43,15 +44,18 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Switch>
-          <AppRoute exact path="/Home" component={HomePage} />
+          <AppRoute exact path="/" component={Services} />
 
           <AppRoute exact path="/Contact" component={Home} layout={LayoutDefault} />
-          <AppRoute exact path="/Home" component={HomePage} />
+          {/* <AppRoute exact path="/Home" component={HomePage} /> */}
           <AppRoute exact path="/Services" component={Services}/>
           <AppRoute exact path="/LogReg" component={LogReg} layout={LayoutDefault} />
+          <AppRoute exact path="/SearchState" component={SearchState}/>
         </Switch>
+        
       )} />
       
+
       </>
  
   );
