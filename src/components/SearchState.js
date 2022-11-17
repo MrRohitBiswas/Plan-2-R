@@ -1,10 +1,15 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
+
 import "./SearchState.css";
 import SearchStateCarosuel from "./SearchStateCarousel";
 export default function SearchState() {
+  const location = useLocation()
+  const sName = location.State;
+  console.log(sName);
   return (
     <div>
-      <SearchStateCarosuel/>
+      <SearchStateCarosuel sName={sName}/>
       <section className="search-sec">
         <div className="container">
           <form action="#" method="post" noValidate="novalidate">
