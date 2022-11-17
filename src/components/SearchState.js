@@ -5,11 +5,12 @@ import "./SearchState.css";
 import SearchStateCarosuel from "./SearchStateCarousel";
 export default function SearchState() {
   const location = useLocation()
-  const sName = location.State;
-  console.log(sName);
+  const State = location.State;
+  console.log(State);
   return (
     <div>
-      <SearchStateCarosuel sName={sName}/>
+    {State&&
+      <SearchStateCarosuel slides={State.slides}/>}
       <section className="search-sec">
         <div className="container">
           <form action="#" method="post" noValidate="novalidate">

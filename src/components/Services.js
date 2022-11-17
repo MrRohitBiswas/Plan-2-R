@@ -53,7 +53,7 @@ export default function Services() {
                 <Link
                   to={{
                     pathname: "/SearchState",
-                    State: { sName : CurrState},
+                    State: {...CurrState},
                   }}
                 >
                   <div className="container">
