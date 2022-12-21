@@ -62,11 +62,11 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    — Just WOW...! The best website I have ever found to plan my tour in the most cost-effective way
+                    — My students are so good that they gift me migraine daily. This website made my weekends a bliss.
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Rohit Biswas</span>
+                  <span className="testimonial-item-name text-color-high">Saikat Bandhopadhyay</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
                     <a href="https://github.com/MrRohitBiswas/">Top Premium User</a>
@@ -79,7 +79,7 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    — I don't know how to express myself but my weekends are successful because of Plan 2-R... Lots of Love
+                    — I don't know how to express myself but my holidays are successful because of  Tour CirKit... Lots of Love
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
@@ -96,7 +96,7 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    — After loads of work, my wife bangs my head for another honeymoon... Plan 2-R is the reason I am still alive.
+                    — After loads of work, my wife bangs my head for another honeymoon... Tour CirKit is the reason I am still alive.
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">

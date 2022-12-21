@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'What Plan 2-R Gives you:',
-    paragraph: 'Being exceptionally unique Plan 2-R gives you the premium experience of planning your tour — decide youe route with one hand and book hotels with the other'
+    title: 'What Tour CirKit Gives you:',
+    paragraph: 'Being exceptionally unique Tour CirKit gives you the premium experience of planning your tour — decide youe route with one hand and book hotels with the other'
   };
 
   return (

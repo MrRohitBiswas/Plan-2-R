@@ -30,7 +30,7 @@ export default function Navbar() {
       {/* container-fluid */}
         {/* <div className=""> */}
           <div className="logo">
-            <Link to="/Services">Plan-2R</Link>
+            <Link to="/Services">Tour CirKit</Link>
           </div>
           <div id="mainListDiv" className={menuClass}>
             <ul className="navlinks">
@@ -60,5 +60,5 @@ Navbar.propTypes = {
   title: PropTypes.string.isRequired,
 };
 Navbar.defaultProps = {
-  title: "Plan-2R",
+  title: "Tour CirKit",
 };
