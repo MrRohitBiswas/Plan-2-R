@@ -7,7 +7,8 @@ import Navbar from "./components/Navbar";
 import Services from './components/Services'
 import LogReg from './components/LogReg';
 import ContactUs from './components/ContactUs';
-import SearchState from './components/SearchState'
+import SearchState from './components/SearchState';
+import topPlacesResp from './components/topPlaces/TopPlacesResp';
 
 // import HomePage from './components/Home';
 // Layouts
@@ -39,7 +40,7 @@ const App = () => {
 
   return (
     <>
-     <Navbar title="Plan 2-R" />
+     <Navbar title="Tour CirKit" />
     <ScrollReveal
       ref={childRef}
       children={() => (
@@ -51,6 +52,8 @@ const App = () => {
           <AppRoute exact path="/Services" component={Services}/>
           <AppRoute exact path="/LogReg" component={LogReg} layout={LayoutDefault} />
           <AppRoute exact path="/SearchState" component={SearchState}/>
+          
+          <AppRoute exact path="/topPlacesResp" component={topPlacesResp}/>
         </Switch>
         
       )} />
