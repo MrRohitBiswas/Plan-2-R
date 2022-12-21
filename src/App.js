@@ -6,10 +6,8 @@ import ReactGA from 'react-ga';
 import Navbar from "./components/Navbar";
 import Services from './components/Services'
 import LogReg from './components/LogReg';
-import ContactUs from './components/ContactUs';
 import SearchState from './components/SearchState';
-import topPlacesResp from './components/topPlaces/TopPlacesResp';
-
+import HotelDetails from './components/topPlaces/hotels/HotelDetails';
 // import HomePage from './components/Home';
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -51,9 +49,8 @@ const App = () => {
           {/* <AppRoute exact path="/Home" component={HomePage} /> */}
           <AppRoute exact path="/Services" component={Services}/>
           <AppRoute exact path="/LogReg" component={LogReg} layout={LayoutDefault} />
-          <AppRoute exact path="/SearchState" component={SearchState}/>
-          
-          <AppRoute exact path="/topPlacesResp" component={topPlacesResp}/>
+          <AppRoute exact path="/SearchState" component={SearchState} layout={LayoutDefault}/>
+          <AppRoute exact path="/HotelDetails" component={HotelDetails}/>
         </Switch>
         
       )} />
