@@ -4,6 +4,7 @@ import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 import Navbar from "./components/Navbar";
+import Footer from './components/Footer';
 import Services from './components/Services'
 import LogReg from './components/LogReg';
 import SearchState from './components/SearchState';
@@ -13,7 +14,7 @@ import HotelDetails from './components/topPlaces/hotels/HotelDetails';
 import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
-import Home from './views/Home';
+import Home from './components/ContactUs';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -50,12 +51,12 @@ const App = () => {
           <AppRoute exact path="/Services" component={Services}/>
           <AppRoute exact path="/LogReg" component={LogReg} layout={LayoutDefault} />
           <AppRoute exact path="/SearchState" component={SearchState} layout={LayoutDefault}/>
-          <AppRoute exact path="/HotelDetails" component={HotelDetails}/>
+          <AppRoute exact path="/HotelDetails/:id" component={HotelDetails}/>
         </Switch>
         
       )} />
       
-
+        <Footer/>
       </>
  
   );
