@@ -15,6 +15,7 @@ export default function Services() {
   $(".remove").click(function () {
     $(".bottom").removeClass("clicked");
   });
+  
 
   return (
     <div>
@@ -27,6 +28,7 @@ export default function Services() {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
+        id="serviceStates"
       >
         <div className="container text">
           <p
@@ -34,7 +36,8 @@ export default function Services() {
               fontSize: "40px",
               fontFamily: `Inter,sans-serif`,
               paddingTop: "80px",
-            }}
+            }
+          }
           >
             Select the state where you want to go:
           </p>

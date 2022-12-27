@@ -59,7 +59,7 @@ const Hero = ({
     >
       <div className="container-sm">
         <div className={innerClasses}>
-          <div className="hero-content">
+          <div className="hero-content" style={{marginTop : '50px'}}>
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">Tour <span className="text-color-primary">CirKit</span>
             </h1>
             <div className="container-xs">

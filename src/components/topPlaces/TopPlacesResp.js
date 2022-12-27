@@ -1,43 +1,61 @@
-import React, {useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import Results from "../database/resp.json";
+// import Results from "../database/resp.json";
 import "./topPlacesResp.css"
-export default function topPlacesResp() {
+
+export default function TopPlacesResp({id}) {
+  const [topPlacesArr, setTopPlacesArr] = useState([]);
+  console.log(id);
+
+  useEffect(() => {
+    (async () => {
+      const url = `/top-sights/?id=${id}`
+      // console.log(id);
+      const resp = await fetch(url);
+
+      if (resp.status === 200) {
+        const data = await resp.json();
+        console.log(data);
+        setTopPlacesArr(data.topPlaces);
+        console.log(data);
+      }
+    })();
+  })
   return (
     <div className='topPlacesResult ' >
-        <h1 className="topPlacesResultHeading">Top Places Results:</h1>
-        <hr style={{ 
-  display: 'block',
-  marginTop: '0.5em',
-  marginBottom: '0.5em',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  borderStyle: 'inset',
-  borderWidth: '2px',
-}}/>
-        <ul class="cards results">
-        {Results.topPlaces.map((spots) => {
-            return (
-                
-                <li>
-                  <a href="" class="card">
-                    <img src={spots.image} class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" ><path /></svg>   
-                        <div class="card__header-text">
-                          <h3 class="card__title">{spots.place}</h3>            
-                          
-                        </div>
-                      </div>
-                      <p class="card__description">{spots.desc}</p>
+      <h1 className="topPlacesResultHeading">Top Places Results:</h1>
+      <hr style={{
+        display: 'block',
+        marginTop: '0.5em',
+        marginBottom: '0.5em',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        borderStyle: 'inset',
+        borderWidth: '2px',
+      }} />
+      <ul class="cards results">
+        {topPlacesArr.map((spots) => {
+          return (
+
+            <li>
+              <a href="" class="card">
+                <img src={spots.image} class="card__image" alt="" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" ><path /></svg>
+                    <div class="card__header-text">
+                      <h3 class="card__title">{spots.place}</h3>
+
                     </div>
-                  </a>      
-                </li>
-                
-                );
-            })}
-            </ul>
+                  </div>
+                  <p class="card__description">{spots.desc}</p>
+                </div>
+              </a>
+            </li>
+
+          );
+        })}
+      </ul>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link, useLocation } from "react-router-dom";
 import $ from "jquery";
 import "./SearchState.css";
@@ -7,8 +7,13 @@ import SearchStateCarousel from "./SearchStateCarousel";
 import TopPlacesResp from "./topPlaces/TopPlacesResp";
 
 export default function SearchState() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const location = useLocation();
   const State = location.State;
+  const stateName = State!==undefined?State.stateName:null;
+
   console.log(State);
   $(document).ready(function () {
     $("#search").focus(function () {
@@ -70,9 +75,12 @@ export default function SearchState() {
         </div>
       </>
       <div>
-        <TopPlacesResp />
+        <TopPlacesResp id={stateName}/>
       </div>
-      <Link to="/HotelDetails" class="button2" style={{marginLeft:"100px", cursor : "pointer"}}>
+
+      {/* console.log('Curr stte', State); */}
+
+      <Link to={`/HotelDetails/${stateName}`} class="button2" style={{marginLeft:"100px", cursor : "pointer"}}>
         <span></span>
         <span></span>
         <span></span>
