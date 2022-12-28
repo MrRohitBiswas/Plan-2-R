@@ -12,7 +12,6 @@ import HotelDetails from './components/topPlaces/hotels/HotelDetails';
 // import HomePage from './components/Home';
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
-
 // Views 
 import Home from './components/ContactUs';
 
@@ -52,6 +51,7 @@ const App = () => {
           <AppRoute exact path="/LogReg" component={LogReg} layout={LayoutDefault} />
           <AppRoute exact path="/SearchState" component={SearchState} layout={LayoutDefault}/>
           <AppRoute exact path="/HotelDetails/:id" component={HotelDetails}/>
+          
         </Switch>
         
       )} />
