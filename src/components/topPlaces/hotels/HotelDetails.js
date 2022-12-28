@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./HotelDetails.css";
 export default function HotelDetails() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const {id} = useParams();
 
   const [hotelsArr, setHotelsArr] = useState([]);

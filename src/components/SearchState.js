@@ -1,20 +1,19 @@
-import React, {useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import $ from "jquery";
 import "./SearchState.css";
-import "./HotelsButton.scss"
+import "./HotelsButton.scss";
 import SearchStateCarousel from "./SearchStateCarousel";
 import TopPlacesResp from "./topPlaces/TopPlacesResp";
-
+import LoadingBar from "./LoadingBar/LoadingBar";
 export default function SearchState() {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   const location = useLocation();
   const State = location.State;
-  const stateName = State!==undefined?State.stateName:null;
+  const stateName = State !== undefined ? State.stateName : null;
 
-  console.log(State);
   $(document).ready(function () {
     $("#search").focus(function () {
       $(".Search-box").addClass("border-searching");
@@ -36,8 +35,18 @@ export default function SearchState() {
     });
   });
 
+  //Loading
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <div>
+      {loading ? <LoadingBar /> : <></>}
       <div>{State && <SearchStateCarousel slides={State.slides} />}</div>
       <>
         <div className="SearchContainer ">
@@ -75,12 +84,16 @@ export default function SearchState() {
         </div>
       </>
       <div>
-        <TopPlacesResp id={stateName}/>
+        <TopPlacesResp id={stateName} />
       </div>
 
       {/* console.log('Curr stte', State); */}
 
-      <Link to={`/HotelDetails/${stateName}`} class="button2" style={{marginLeft:"100px", cursor : "pointer"}}>
+      <Link
+        to={`/HotelDetails/${stateName}`}
+        class="button2"
+        style={{ marginLeft: "100px", cursor: "pointer" }}
+      >
         <span></span>
         <span></span>
         <span></span>

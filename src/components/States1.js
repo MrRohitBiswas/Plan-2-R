@@ -243,39 +243,39 @@ const States = [
     url: s6,
     slides: [
       {
-        title: "Great Himalayan National Park",
-        subtitle: "Manali",
-        description: "Encounter the Elusive",
+        title: "Machu Picchu",
+        subtitle: "Himachal Pradesh",
+        description: "Adventure is never far away",
         image:
-          "https://www.shutterstock.com/shutterstock/photos/1135932911/display_1500/stock-photo-tirthan-valley-himachal-pradesh-india-jun-inside-the-great-himalayan-national-park-great-1135932911.jpg",
+          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Manikaran Sahib",
-        subtitle: "Kasol",
+        title: "Chamonix",
+        subtitle: "Himachal Pradesh",
         description: "Let your dreams come true",
         image:
-          "https://c8.alamy.com/comp/CNHKX0/sikh-gurudwara-at-manikaran-parvati-valley-india-CNHKX0.jpg",
+          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Mall Road",
-        subtitle: "Shimla",
+        title: "Mimisa Rocks",
+        subtitle: "Himachal Pradesh",
         description: "A piece of heaven",
         image:
           "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Dalai Lama Temple",
-        subtitle: "Mcleodganj",
-        description: "A little Dhasa",
+        title: "Four",
+        subtitle: "Himachal Pradesh",
+        description: "A piece of heaven",
         image:
           "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Gilbert Trail",
-        subtitle: "Kasauli",
-        description: "Popular hiking destination in the mountains with picturesque views & a tranquil atmosphere.",
+        title: "Five",
+        subtitle: "Himachal Pradesh",
+        description: "A piece of heaven",
         image:
-          "https://images.thrillophilia.com/image/upload/s--aX2rKgyV--/c_fill,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/249/988/original/1588586108_5581f6a5-f4bc-47ab-b71e-0f72368549c8-istock-1193123139.png.jpg?1588586108",
+          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
     ],
   },
@@ -287,39 +287,39 @@ const States = [
     url: s7,
     slides: [
       {
-        title: "Taj Mahal",
-        subtitle: "Agra",
-        description: "A wonder of wonders in the world",
+        title: "Machu Picchu",
+        subtitle: "Uttar Pradesh",
+        description: "Adventure is never far away",
         image:
-          "https://i.natgeofe.com/n/8eba070d-14e5-4d07-8bab-9db774029063/93080_3x2.jpg",
+          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Dhamek Stupa",
-        subtitle: "Varanasi",
-        description: "A massive stone and brick structure",
+        title: "Chamonix",
+        subtitle: "Uttar Pradesh",
+        description: "Let your dreams come true",
         image:
-          "https://www.uptourism.gov.in/site/writereaddata/PageGallary/PG_202201071608445381.jpg",
+          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Bara Imambara",
-        subtitle: "Lucknow",
-        description: "Historical Mughal Architecture",
+        title: "Mimisa Rocks",
+        subtitle: "Uttar Pradesh",
+        description: "A piece of heaven",
         image:
-          "https://www.fabhotels.com/blog/wp-content/uploads/2022/01/Bara-Imambara_1428435608-600X400-1280x720.jpg",
+          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Govardhan Hill",
-        subtitle: "Mathura",
-        description: "Sacred Hindu site in the Mathura district of Uttar Pradesh",
+        title: "Four",
+        subtitle: "Uttar Pradesh",
+        description: "A piece of heaven",
         image:
-          "https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2016/02/04/457178-govardhan-parvat.jpg",
+          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Jama Masjid",
-        subtitle: "Fatehpur Sikiri",
-        description: "One of the largest mosques in India.",
+        title: "Five",
+        subtitle: "Uttar Pradesh",
+        description: "A piece of heaven",
         image:
-          "https://img.staticmb.com/mbcontent/images/uploads/2022/7/jama-masjid-delhi.jpg",
+          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
     ],
   },
@@ -331,39 +331,39 @@ const States = [
     url: s8,
     slides: [
       {
-        title: "Sabarmati Riverfront",
-        subtitle: "Ahmedabad",
-        description: "A waterfront developed along the banks of Sabarmati river in Ahmedabad",
-        image:
-          "https://sabarmatiriverfront.com/wp-content/uploads/2020/06/slider4.jpg",
-      },
-      {
-        title: "Gir National Park",
+        title: "Machu Picchu",
         subtitle: "Gujarat",
-        description: "A wildlife sanctuary in Gujarat",
+        description: "Adventure is never far away",
         image:
-          "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/75/9b/26.jpg",
+          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Surya Narayan Temple",
-        subtitle: "Vadodara",
-        description: "A majestic Temple dedicated to the Sun God or Surya Devta. ",
+        title: "Chamonix",
+        subtitle: "Gujarat",
+        description: "Let your dreams come true",
         image:
-          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/dc/9e/c6/surya-mandir.jpg?w=1200&h=-1&s=1",
+          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Diu Fort",
-        subtitle: "Diu",
-        description: " Portuguese-built fortification located on the west coast of India in Diu",
+        title: "Mimisa Rocks",
+        subtitle: "Gujarat",
+        description: "A piece of heaven",
         image:
-          "https://makeithappen.co.in/wp-content/uploads/2021/12/Diu-Fort-G1-Mobile-2.jpg",
+          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Bhuj Fort",
-        subtitle: "Bhuj",
-        description: "a fort located in the outskirts of the town of Bhuj in the district of Kutch",
+        title: "Four",
+        subtitle: "Gujarat",
+        description: "A piece of heaven",
         image:
-          "https://www.vtvgujarati.com/sites/default/files/news_image/bhujia-fort.jpg",
+          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Five",
+        subtitle: "Gujarat",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
     ],
   },
@@ -375,39 +375,39 @@ const States = [
     url: s9,
     slides: [
       {
-        title: "Nilnag Lake",
-        subtitle: "Yusmarg",
-        description: " A high-altitude lake, nestled among dense pine forests.",
-        image:
-          "https://www.tourmyindia.com/socialimg/nilnag-lake-yusmarg.jpg",
-      },
-      {
-        title: "Dal Lake",
-        subtitle: "Srinagar",
-        description: "Jewel in the crown of Kashmir",
-        image:
-          "https://hikerwolf.com/wp-content/uploads/2021/02/Dal_Lake.jpg-e1614329045441.png",
-      },
-      {
-        title: "Vaishno Devi",
-        subtitle: "Trikuta Hills",
-        description: "A major Hindu pilgrimage destination in India",
-        image:
-          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/34/98/37/lrm-export-31665251117501.jpg?w=1200&h=-1&s=1",
-      },
-      {
-        title: "Aru Valley",
-        subtitle: "Kashmir",
-        description: "Juxtaposed against the snow-covered Himalayan peaks, Aru Valley is an enthralling village in Kashmir.",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/e/ef/Aruvillage.jpg",
-      },
-      {
-        title: "Sonamarg ",
+        title: "Machu Picchu",
         subtitle: "Jammu And Kashmir",
-        description: "A hill station located in the Ganderbal District of Jammu and Kashmir",
+        description: "Adventure is never far away",
         image:
-          "https://www.holidify.com/images/bgImages/SONAMARG.jpg",
+          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Chamonix",
+        subtitle: "Jammu And Kashmir",
+        description: "Let your dreams come true",
+        image:
+          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Mimisa Rocks",
+        subtitle: "Jammu And Kashmir",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Four",
+        subtitle: "Jammu And Kashmir",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Five",
+        subtitle: "Jammu And Kashmir",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
     ],
   },
@@ -419,39 +419,39 @@ const States = [
     url: s10,
     slides: [
       {
-        title: "Mysore Palace",
-        subtitle: "Mysore",
-        description: "Official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore.",
-        image:
-          "https://bangalore247.in/wp-content/uploads/2021/03/Mysore-Palace.jpg",
-      },
-      {
-        title: "Badami",
-        subtitle: "Bagalkot",
-        description: "Famous for its rock cut monuments",
-        image:
-          "https://www.tourmyindia.com/blog//wp-content/uploads/2015/12/Rock-Cut-Cave-Temples-Badami.jpg",
-      },
-      {
-        title: "Om Beach",
-        subtitle: "Gokarna",
-        description: "One of the acclaimed beaches in the country",
-        image:
-          "https://preview.redd.it/0aq4snfgcsc71.jpg?width=640&crop=smart&auto=webp&s=eba8c0260bada76eba2ca184fbe7173b99b80793",
-      },
-      {
-        title: "Chikmagalur",
+        title: "Machu Picchu",
         subtitle: "Karnataka",
-        description: "Coffee Land Of Karnataka",
+        description: "Adventure is never far away",
         image:
-          "https://onhisowntrip.com/wp-content/uploads/2020/06/travelling_soldierr-1080x540.jpg",
+          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Lalbagh Botanical Garden",
-        subtitle: "Bengaluru",
-        description: "An botanical garden in Bangalore, India, with an over 200-year history.",
+        title: "Chamonix",
+        subtitle: "Karnataka",
+        description: "Let your dreams come true",
         image:
-          "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_154851008_20200123162547_20200123162603.png",
+          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Mimisa Rocks",
+        subtitle: "Karnataka",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Four",
+        subtitle: "Karnataka",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Five",
+        subtitle: "Karnataka",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
     ],
   },
@@ -463,39 +463,39 @@ const States = [
     url: s11,
     slides: [
       {
-        title: "Marina Beach",
-        subtitle: "Chennai",
-        description: "The second longest urban beach in the world",
+        title: "Machu Picchu",
+        subtitle: "Tamil Nadu",
+        description: "Adventure is never far away",
         image:
-          "https://chennaitourism.travel/images/places-to-visit/headers/marina-beach-chennai-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Promendade Beach",
-        subtitle: "Pondicherry",
-        description: "It is a 1.2-kilometre-long stretch in Pondicherry, starts from War Memorial and end at Dupleix Park on the Goubert Avenue.",
+        title: "Chamonix",
+        subtitle: "Tamil Nadu",
+        description: "Let your dreams come true",
         image:
-          "https://www.tourmyindia.com/states/puducherry/images/promenade-beach1.jpg",
+          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Bandipur Tiger Reserve",
-        subtitle: "Mudumalai",
-        description: "Known for its small population of tigers",
+        title: "Mimisa Rocks",
+        subtitle: "Tamil Nadu",
+        description: "A piece of heaven",
         image:
-          "https://images.thrillophilia.com/image/upload/s--2fWlJke1--/c_fill,h_775,q_auto,w_1600/f_auto,fl_strip_profile/v1/images/photos/000/004/438/original/1594629677_shutterstock_1094473229.jpg.jpg?1594629677",
+          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Vivekananda Rock",
-        subtitle: "Kanyakumari",
-        description: "The memorial stands on one of the two rocks located about 500 meters off mainland of Vavathurai.",
+        title: "Four",
+        subtitle: "Tamil Nadu",
+        description: "A piece of heaven",
         image:
-          "https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/vivekananda-rock-memorial-1655195795_ac72566bd8720c988c09.webp",
+          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Thillai Nataraja Temple",
-        subtitle: "Chidambaram",
-        description: "A Hindu temple dedicated to Nataraja, the form of Shiva as the lord of dance.",
+        title: "Five",
+        subtitle: "Tamil Nadu",
+        description: "A piece of heaven",
         image:
-          "https://www.templepurohit.com/wp-content/uploads/2015/02/Thillai-Nataraja-Temple-Chidambaram.jpg",
+          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
     ],
   },
@@ -507,39 +507,39 @@ const States = [
     url: s12,
     slides: [
       {
-        title: "Ajanta and Ellora Caves",
-        subtitle: "Aurangabad",
-        description: " It is one of the largest rock-cut Hindu temple cave complexes in the world, with artwork dating from the period 600–1000 CE.",
-        image:
-          "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/31/92/93.jpg",
-      },
-      {
-        title: "Mahabaleshwar",
-        subtitle: "Satara",
-        description: "A hill station in India's forested Western Ghats range.",
-        image:
-          "https://www.holidify.com/images/bgImages/MAHABALESHWAR.jpg",
-      },
-      {
-        title: "Gateway Of India",
-        subtitle: "Mumbai",
-        description: "An arch-monument built in the early 20th century in the city of Mumbai",
-        image:
-          "https://yometro.com/images/places/gateway-of-india.jpg",
-      },
-      {
-        title: "Lonavala",
+        title: "Machu Picchu",
         subtitle: "Maharashtra",
-        description: "A hill station surrounded by green valleys in western India near Mumbai.",
+        description: "Adventure is never far away",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/d/dd/Lonavalamh.jpg",
+          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Pandav Leni Caves",
-        subtitle: "Nashik",
-        description: "Trirashmi Leni, are a group of 23 caves carved between the 1st century BCE and the 3rd century CE",
+        title: "Chamonix",
+        subtitle: "Maharashtra",
+        description: "Let your dreams come true",
         image:
-          "https://www.trawell.in/admin/images/upload/1316521000Nashik_Pandavleni_Caves_Main.jpg",
+          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Mimisa Rocks",
+        subtitle: "Maharashtra",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Four",
+        subtitle: "Maharashtra",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      },
+      {
+        title: "Five",
+        subtitle: "Maharashtra",
+        description: "A piece of heaven",
+        image:
+          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
     ],
   },
@@ -551,18 +551,18 @@ const States = [
     url: s13,
     slides: [
       {
-        title: "Red Fort",
+        title: "Machu Picchu",
         subtitle: "Delhi",
-        description: "Served as the main residence of the Mughal Emperors.",
+        description: "Adventure is never far away",
         image:
-          "https://www.planetware.com/photos-large/IND/india-delhi-red-fort.jpg",
+          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Qutub Minar",
+        title: "Chamonix",
         subtitle: "Delhi",
-        description: "India's tallest minaret",
+        description: "Let your dreams come true",
         image:
-          "https://www.planetware.com/photos-large/IND/india-delhi-qutub-minar.jpg",
+          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
         title: "Mimisa Rocks",
