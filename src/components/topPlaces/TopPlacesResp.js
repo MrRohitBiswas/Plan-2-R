@@ -41,7 +41,7 @@ export default function TopPlacesResp({id}) {
         {topPlacesArr.map((spots) => {
           return (
 
-            <li>
+            <li className='topPlacesCards'>
               <a href="" class="card">
                 <img src={spots.image} class="card__image" alt="" />
                 <div class="card__overlay">

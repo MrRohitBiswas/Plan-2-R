@@ -6,6 +6,9 @@
   * {
     box-sizing: border-box;
   }
+  .topPlacesCards{
+    height: 225px;
+  }
   .topPlacesResultHeading{
     text-align: center;
   }
