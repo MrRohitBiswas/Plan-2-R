@@ -18,7 +18,7 @@
     overflow: auto;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
     .loginAside {
         display: none;
     }
