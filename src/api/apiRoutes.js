@@ -1,5 +1,6 @@
 export async function getTopSights(id) {
-  const url = `/top-sights/?id=${id}`
+  // const url = `/top-sights/?id=${id}`
+  const url = './topSights.json'
   console.log('id:', id);
   const resp = await fetch(url);
 
@@ -12,24 +13,32 @@ export async function getTopSights(id) {
   }
 }
 
+// export async function getHotels(id) {
+//   // const url = `/hotels/?id=${id}`
+//   const url = './hotels.json';
+//   // console.log(id);
+//   const resp = await fetch(url);
+
+//   if (resp.status === 200) {
+//     try {
+//       const data = await resp.json();
+//       // setHotelsArr(data.hotels);
+//       console.log(data);
+//       return data;
+//     } catch(err) {
+
+//     }
+//   }
+// }
+
 export async function getHotels(id) {
-  // const url = `http://localhost:5000/hotels/?id=${id}`;
-  const url = `/hotels/?id=${id}`
-  // console.log(id);
-  const resp = await fetch(url);
-
-  if (resp.status === 200) {
-    // const data = {}
-    try {
-      const data = await resp.json();
-      // setHotelsArr(data.hotels);
-      // console.log(data);
-      return data;
-    } catch(err) {
-
-    }
-  }
+  console.log('HOTELS');
+  let a = await fetch('./hotels.json')
+  let b = await a.json();
+  console.log(b)
+  return b;
 }
+
 
 export async function signup(obj) {
   const url = 'auth/signup';
@@ -54,3 +63,5 @@ export async function login(obj) {
     body: JSON.stringify(obj)
   });  
 }
+
+
