@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 // import Results from "../database/resp.json";
 import "./topPlacesResp.css"
+import {getTopSights} from '../../api/apiRoutes';
 
 export default function TopPlacesResp({id}) {
   const [topPlacesArr, setTopPlacesArr] = useState([]);
@@ -9,18 +10,21 @@ export default function TopPlacesResp({id}) {
 
   useEffect(() => {
     (async () => {
-      const url = `/top-sights/?id=${id}`
-      // console.log(id);
-      const resp = await fetch(url);
+      // const url = `/top-sights/?id=${id}`
+      // // console.log(id);
+      // const resp = await fetch(url);
 
-      if (resp.status === 200) {
-        const data = await resp.json();
-        console.log(data);
-        setTopPlacesArr(data.topPlaces);
-        console.log(data);
-      }
+      // if (resp.status === 200) {
+      //   const data = await resp.json();
+      //   console.log(data);
+      //   setTopPlacesArr(data.topPlaces);
+      //   console.log(data);
+      // }
+      const data = await getTopSights(id);
+      setTopPlacesArr(data.topPlaces);
     })();
-  })
+  }, []);
+
   return (
     <div className='topPlacesResult ' >
       <h1 className="topPlacesResultHeading">Top Places Results:</h1>
