@@ -97,6 +97,18 @@
     letter-spacing: 0.2ch;
     text-transform: uppercase;
     margin: 0;
+  }@media screen and (max-width: 600px) {
+    .slideSubtitle,
+    .slideTitle {
+      font-size: 15px;
+      letter-spacing: 0.1ch;
+    }
+    .slideDescription{
+      display: none;
+    }
+    h2{
+    line-height: 15px;
+    }
   }
 
   .slideSubtitle::before {

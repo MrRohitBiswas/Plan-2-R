@@ -66,7 +66,7 @@ export default function Navbar() {
                 <Link to="/Contact" onClick={displayMenu}>Contact Us</Link>
               </li>
               <li>
-                <Link to="/LogReg" onClick={displayMenu}>Login/Register</Link>
+                <Link to="/LogReg" onClick={displayMenu}>Sign Up</Link>
               </li>
             </ul>
           </div>

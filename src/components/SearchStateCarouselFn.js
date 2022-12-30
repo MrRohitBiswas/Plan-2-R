@@ -1,36 +1,40 @@
-;(function () {
-
+(function () {
   setTimeout(function () {
     var cstyle =
-    "line-height:2;background:#2B2E31;color:#FFB909;font-family:monospace;";
+      "line-height:2;background:#2B2E31;color:#FFB909;font-family:monospace;";
     console.log("%c     made by the @keyframers     ", cstyle);
-    console.log("https://twitter.com/keyframers  https://youtube.com/keyframers");
+    console.log(
+      "https://twitter.com/keyframers  https://youtube.com/keyframers"
+    );
   }, 100);
 
-  var el = document.querySelector('[data-keyframers-credit]');
+  var el = document.querySelector("[data-keyframers-credit]");
 
   if (el) {
-
-
-    el.className += ' kf_credit';
+    el.className += " kf_credit";
 
     var hasText = el.innerHTML.length;
 
-    el.insertAdjacentHTML('afterbegin', `
+    el.insertAdjacentHTML(
+      "afterbegin",
+      `
 <div class="kf_credit_logo">
 <svg viewBox="0 0 122 68" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-miterlimit="1.5">
   <path d="M33.807 6.788L6.654 33.941l27.153 27.153L60.96 33.941 33.807 6.788zM88.113 6.788L60.96 33.941l27.153 27.153 27.153-27.153L88.113 6.788z" fill="none" stroke="#FFB909" stroke-width="7.2"/>
   <path d="M60.96 0L27.019 33.941 60.96 67.882l33.941-33.941L60.96 0z" fill="#FFB909"/>
   <path d="M70.56 43.541l-9.6-9.6 9.6-9.6M55.68 21.941V46.11" fill="none" stroke="#333" stroke-width="7.2" stroke-linecap="butt"/>
 </svg>
-</div>`);
+</div>`
+    );
 
     if (!hasText) {
-      el.insertAdjacentHTML('afterbegin', '<span>Watch this tutorial</span> ');
-      el.insertAdjacentHTML('beforeend', ' <span>by the @keyframers!</span>');
+      el.insertAdjacentHTML("afterbegin", "<span>Watch this tutorial</span> ");
+      el.insertAdjacentHTML("beforeend", " <span>by the @keyframers!</span>");
     }
 
-    document.head.insertAdjacentHTML('beforeend', `<style>
+    document.head.insertAdjacentHTML(
+      "beforeend",
+      `<style>
 .kf_credit {
   position: fixed;
   bottom: 0.5em;
@@ -60,30 +64,44 @@
   transform-style: preserve-3d;
 }
 
-</style>`);
+</style>`
+    );
 
     el.onclick = function () {
       if (ga) {
-        var url = this.getAttribute('href');
-        ga('send', 'event', 'keyframers', 'click', url, {
-          'transport': 'beacon',
-          'hitCallback': function () {window.open(url);} });
+        var url = this.getAttribute("href");
+        ga("send", "event", "keyframers", "click", url, {
+          transport: "beacon",
+          hitCallback: function () {
+            window.open(url);
+          },
+        });
 
         return false;
       }
     };
-
   }
-
 })();
 
-
-(function (i, s, o, g, r, a, m) {i['GoogleAnalyticsObject'] = r;i[r] = i[r] || function () {
-    (i[r].q = i[r].q || []).push(arguments);}, i[r].l = 1 * new Date();a = s.createElement(o),
-  m = s.getElementsByTagName(o)[0];a.async = 1;a.src = g;m.parentNode.insertBefore(a, m);
-})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-ga('create', 'UA-6412794-6', 'auto');
-ga('send', 'pageview');
-ga('send', 'event', 'keyframers');
-
-
+(function (i, s, o, g, r, a, m) {
+  i["GoogleAnalyticsObject"] = r;
+  (i[r] =
+    i[r] ||
+    function () {
+      (i[r].q = i[r].q || []).push(arguments);
+    }),
+    (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(
+  window,
+  document,
+  "script",
+  "https://www.google-analytics.com/analytics.js",
+  "ga"
+);
+ga("create", "UA-6412794-6", "auto");
+ga("send", "pageview");
+ga("send", "event", "keyframers");
