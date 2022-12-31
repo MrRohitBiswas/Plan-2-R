@@ -6,7 +6,7 @@ export async function getTopSights(id) {
 
   if (resp.status === 200) {
     const data = await resp.json();
-    console.log(data);
+    // console.log(data);
     // setTopPlacesArr(data.topPlaces);
     return data;
     // console.log(data);

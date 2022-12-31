@@ -9,6 +9,7 @@ import HomePage from "./Home";
 import "./ServiceSearchBar.css";
 
 export default function Services() {
+  console.log('Service component renders');
 
   $(".buy").click(function () {
     $(".bottom").addClass("clicked");

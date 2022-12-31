@@ -14,6 +14,7 @@ import HotelDetails from './components/topPlaces/hotels/HotelDetails';
 import LayoutDefault from './layouts/LayoutDefault';
 // Views 
 import Home from './components/ContactUs';
+import Dummy from './Dummy';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -28,13 +29,14 @@ const App = () => {
   const childRef = useRef();
   let location = useLocation();
 
-  useEffect(() => {
-    const page = location.pathname;
-    document.body.classList.add('is-loaded')
-    childRef.current.init();
-    trackPage(page);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location]);
+  // useEffect(() => {
+  //   console.log('App ')
+  //   const page = location.pathname;
+  //   document.body.classList.add('is-loaded')
+  //   childRef.current.init();
+  //   trackPage(page);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [location]);
 
   return (
     <>

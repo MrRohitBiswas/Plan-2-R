@@ -14,18 +14,20 @@ export default function SearchState() {
     window.scrollTo(0, 0);
   }, []);
   const location = useLocation();
-  console.log(location);
   const State = location.State;
   const stateName = State !== undefined ? State.stateName : null;
   const param = useParams();
   const loc = param.id;
 
   useEffect(() => {
-    console.log('UseEffect');
-    console.log(location);
-    console.log(State)
-    console.log(loc);
-  })
+    // console.log('UseEffect');
+    // console.log(location);
+    console.log('Search state mounts\n', State);
+    // console.log(loc);
+    return () => {
+      console.log('Search State umounts');
+    }
+  }, [])
 
   $(document).ready(function () {
     $("#search").focus(function () {
@@ -67,9 +69,11 @@ export default function SearchState() {
 
   }
 
+  
+
   return (
     <div>
-      {loading ? <LoadingBar /> : <></>}
+      {/* {loading ? <LoadingBar /> : <></>} */}
       <div>{State && <SearchStateCarousel slides={State.slides || null} />}</div>
       <>
       

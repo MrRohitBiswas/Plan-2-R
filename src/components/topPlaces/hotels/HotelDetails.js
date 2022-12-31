@@ -106,25 +106,44 @@ export default function HotelDetails() {
   
   
   useEffect(() => {
+    console.log('here useEffect runs')
     window.scrollTo(0, 0);
   }, []);
   const {id} = useParams();
+  
   const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
+  
+  
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000);
+  // }, []);
+  
+  
   const [hotelsArr, setHotelsArr] = useState([]);
 
   useEffect(() => {
+    let wantResults = true;
+    setLoading(true);
+    console.log('UseEffect here');
     (async () => {
     const data = await getHotels(id);
-    setHotelsArr(data.hotels);
+    setLoading(false);
+    if (wantResults) {
+      console.log(data)
+      setHotelsArr(data.hotels);
+    }
     console.log(data.hotels);
   })();
-}, [])
+
+  return () => {
+    wantResults = false;
+    setLoading(false);
+    setHotelsArr([]);
+  }
+}, [id])
 
 // useEffect(() => {
 //  setHotelsArr(hotelsData.hotels);

@@ -3,27 +3,38 @@ import { Link } from 'react-router-dom';
 // import Results from "../database/resp.json";
 import "./topPlacesResp.css"
 import {getTopSights} from '../../api/apiRoutes';
+import LoadingBar from '../LoadingBar/LoadingBar';
 
 export default function TopPlacesResp({id}) {
   const [topPlacesArr, setTopPlacesArr] = useState([]);
-  console.log('Outside useEffect', id);
+  const [loading, setLoading] = useState(true);
+
+  // console.log('Outside useEffect', id);
   
   useEffect(() => {
-    console.log('Inside useEffect', id);
+    // console.log('Inside useEffect', id);
     let wantResults = true;
+    setLoading(true);
     (async () => {
       const data = await getTopSights(id);
       if (wantResults) {
         setTopPlacesArr(data.topPlaces);
+        setLoading(false);
       }
     })();
     return () => {
       wantResults = false;
+      setLoading(false);
       setTopPlacesArr([]);
     }
   }, [id]);
 
+  useEffect(() => {
+    console.log('Top places mounts');
+  }, [])
   return (
+    <>
+    {loading ? <LoadingBar /> : <></>}
     <div className='topPlacesResult ' >
       <h1 className="topPlacesResultHeading">Top Places Results:</h1>
       <hr style={{
@@ -36,10 +47,10 @@ export default function TopPlacesResp({id}) {
         borderWidth: '2px',
       }} />
       <ul class="cards results">
-        {topPlacesArr.map((spots) => {
+        {topPlacesArr.map((spots, indx) => {
           return (
 
-            <li className='topPlacesCards'>
+            <li className='topPlacesCards' key={indx}>
               <a href="" class="card">
                 <img src={spots.image} class="card__image" alt="" />
                 <div class="card__overlay">
@@ -59,5 +70,6 @@ export default function TopPlacesResp({id}) {
         })}
       </ul>
     </div>
+    </>
   )
 }
