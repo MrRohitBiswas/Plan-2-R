@@ -49,7 +49,7 @@ const App = () => {
           {/* <AppRoute exact path="/Home" component={HomePage} /> */}
           <AppRoute exact path="/Services" component={Services}/>
           <AppRoute exact path="/LogReg" component={LogReg} layout={LayoutDefault} />
-          <AppRoute exact path="/SearchState" component={SearchState} layout={LayoutDefault}/>
+          <AppRoute exact path="/SearchState/:id" component={SearchState} layout={LayoutDefault}/>
           <AppRoute exact path="/HotelDetails/:id" component={HotelDetails}/>
           
         </Switch>

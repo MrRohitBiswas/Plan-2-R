@@ -6,24 +6,22 @@ import {getTopSights} from '../../api/apiRoutes';
 
 export default function TopPlacesResp({id}) {
   const [topPlacesArr, setTopPlacesArr] = useState([]);
-  console.log(id);
-
+  console.log('Outside useEffect', id);
+  
   useEffect(() => {
+    console.log('Inside useEffect', id);
+    let wantResults = true;
     (async () => {
-      // const url = `/top-sights/?id=${id}`
-      // // console.log(id);
-      // const resp = await fetch(url);
-
-      // if (resp.status === 200) {
-      //   const data = await resp.json();
-      //   console.log(data);
-      //   setTopPlacesArr(data.topPlaces);
-      //   console.log(data);
-      // }
       const data = await getTopSights(id);
-      setTopPlacesArr(data.topPlaces);
+      if (wantResults) {
+        setTopPlacesArr(data.topPlaces);
+      }
     })();
-  }, []);
+    return () => {
+      wantResults = false;
+      setTopPlacesArr([]);
+    }
+  }, [id]);
 
   return (
     <div className='topPlacesResult ' >
