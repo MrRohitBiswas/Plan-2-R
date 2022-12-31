@@ -13,8 +13,8 @@ import HotelDetails from './components/topPlaces/hotels/HotelDetails';
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 // Views 
-import Home from './components/ContactUs';
-import Dummy from './Dummy';
+
+import ContactUsEntry from './ContactUsEntry';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -26,28 +26,35 @@ const trackPage = page => {
 
 const App = () => {
 
-  const childRef = useRef();
-  let location = useLocation();
+  // const childRef = useRef();
+  // let location = useLocation();
 
   // useEffect(() => {
   //   console.log('App ')
-  //   const page = location.pathname;
-  //   document.body.classList.add('is-loaded')
-  //   childRef.current.init();
-  //   trackPage(page);
+  //   // const page = location.pathname;
+  //   // let elem = document.querySelector('.contactus-body')
+  //   // if (elem) {
+
+  //   //   document.body.classList.add('is-loaded');
+  //   // }
+  //   // childRef.current.init();
+  //   // trackPage(page);
   //   // eslint-disable-next-line react-hooks/exhaustive-deps
   // }, [location]);
 
   return (
     <>
      <Navbar title="Tour CirKit" />
-    <ScrollReveal
+    {/* <ScrollReveal
       ref={childRef}
       children={() => (
+        
+      )} /> */}
+      
         <Switch>
           <AppRoute exact path="/" component={Services} />
 
-          <AppRoute exact path="/Contact" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/Contact" component={ContactUsEntry} layout={LayoutDefault} />
           {/* <AppRoute exact path="/Home" component={HomePage} /> */}
           <AppRoute exact path="/Services" component={Services}/>
           <AppRoute exact path="/LogReg" component={LogReg} layout={LayoutDefault} />
@@ -55,9 +62,6 @@ const App = () => {
           <AppRoute exact path="/HotelDetails/:id" component={HotelDetails}/>
           
         </Switch>
-        
-      )} />
-      
         <Footer/>
       </>
  

@@ -36,7 +36,7 @@ export default function TopPlacesResp({id}) {
     <>
     {loading ? <LoadingBar /> : <></>}
     <div className='topPlacesResult ' >
-      <h1 className="topPlacesResultHeading">Top Places Results:</h1>
+      <h1 className="topPlacesResultHeading">Top Places Results: {id}</h1>
       <hr style={{
         display: 'block',
         marginTop: '0.5em',
