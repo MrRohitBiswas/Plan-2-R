@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useHistory, useLocation, useParams } from "react-router-dom";
 import $ from "jquery";
 import "./SearchState.css";
 import "./HotelsButton.scss";
 import SearchStateCarousel from "./SearchStateCarousel";
 import TopPlacesResp from "./topPlaces/TopPlacesResp";
-import LoadingBar from "./LoadingBar/LoadingBar";
+
 export default function SearchState() {
+  const [searchText, setSearchText] = useState();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const location = useLocation();
   const State = location.State;
   const stateName = State !== undefined ? State.stateName : null;
+  const param = useParams();
+  const loc = param.id;
 
   $(document).ready(function () {
     $("#search").focus(function () {
@@ -30,9 +34,6 @@ export default function SearchState() {
         $(".go-icon").removeClass("go-in");
       }
     });
-    $(".go-icon").click(function () {
-      $(".search-form").submit();
-    });
   });
 
   //Loading
@@ -44,17 +45,27 @@ export default function SearchState() {
     }, 2000);
   }, []);
 
+  const history = useHistory();
+
+  const searchFunc = async (e) => {
+    e.preventDefault();
+    history.push(searchText);
+
+  }
+
+  
+
   return (
     <div>
-      {loading ? <LoadingBar /> : <></>}
-      <div>{State && <SearchStateCarousel slides={State.slides} />}</div>
+      <div>{State && <SearchStateCarousel slides={State.slides || null} />}</div>
       <>
+      
         <div className="SearchContainer ">
           <div className="Search-box">
             <div className="Search-icon">
               <i className="fa fa-search Search-icon SearchIconDegree" />
             </div>
-            <form action className="search-form">
+            <form action className="search-form" onSubmit={searchFunc}>
               <svg
                 className="search-border"
                 x="0px"
@@ -75,22 +86,25 @@ export default function SearchState() {
                 placeholder="Search"
                 id="search"
                 autoComplete="off"
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
               />
-            </form>
-            <div className="go-icon">
+              
+            <div className="go-icon" type='submit' onClick={searchFunc}>
               <i className="fa fa-arrow-right" />
             </div>
+            
+            </form>
           </div>
         </div>
       </>
       <div>
-        <TopPlacesResp id={stateName} />
+        <TopPlacesResp id={loc} />
       </div>
 
-      {/* console.log('Curr stte', State); */}
 
       <Link
-        to={`/HotelDetails/${stateName}`}
+        to={`/HotelDetails/${loc}`}
         class="button2"
         style={{ marginLeft: "100px", cursor: "pointer" }}
       >

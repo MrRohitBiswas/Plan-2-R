@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState} from "react";
 import PropTypes from "prop-types";
 import $ from "jquery";
 import './Navbar.css'
@@ -6,11 +6,6 @@ import './Navbar.css'
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  // $(".navTrigger").click(function () {
-  //   $(this).toggleClass("active");
-  //   $("#mainListDiv").toggleClass("show_list");
-  //   $("#mainListDiv").fadeIn();
-  // });
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
         $('.nav').addClass('affix');

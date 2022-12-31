@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { Component } from "react";
 import { HashRouter as Router, Route, NavLink } from "react-router-dom";
 import SignUpForm from "./LoginPages/SignUpForm";
 import SignInForm from "./LoginPages/SignInForm";

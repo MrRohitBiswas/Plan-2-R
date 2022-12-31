@@ -13,7 +13,15 @@ import s12 from "./components/Maharashtra.jpg";
 import s13 from "./components/Delhi.jpg";
 import s14 from "./components/Bihar.jpg";
 import s15 from "./components/Sikkim.jpg";
-import s16 from "./components/NEIndia.jpg";
+import s16 from "./components/ArunachalPradesh.jpg";
+import s17 from "./components/Assam.jpg";
+import s18 from "./components/Meghalaya.jpg";
+import s19 from "./components/Manipur.jpg";
+import s20 from "./components/Tripura.jpg";
+import s21 from "./components/Nagaland.jpg";
+import s22 from "./components/Mizoram.jpg";
+import s23 from "./components/Uttarakhand.jpg";
+
 const States = [
   {
     key: 0,
@@ -95,11 +103,11 @@ const States = [
           "https://www.ekeralatourism.net/wp-content/uploads/2015/12/munnar-1.png",
       },
       {
-        title: "Five",
+        title: "Alleppy",
         subtitle: "Kerala",
-        description: "Never-ending tea plantations and lush forests",
+        description: "Venice Of the East",
         image:
-          "https://www.ekeralatourism.net/wp-content/uploads/2015/12/munnar-1.png",
+          "https://upload.wikimedia.org/wikipedia/commons/e/e4/Alappuzha_Boat_Beauty_W.jpg",
       },
     ],
   },
@@ -247,33 +255,33 @@ const States = [
         subtitle: "Manali",
         description: "Encounter the Elusive",
         image:
-          "https://www.shutterstock.com/shutterstock/photos/1135932911/display_1500/stock-photo-tirthan-valley-himachal-pradesh-india-jun-inside-the-great-himalayan-national-park-great-1135932911.jpg",
+          "https://static2.tripoto.com/media/filter/tst/img/224284/TripDocument/1500389770_1500389719_tirthan04m.jpg",
       },
       {
         title: "Manikaran Sahib",
         subtitle: "Kasol",
         description: "Let your dreams come true",
         image:
-          "https://c8.alamy.com/comp/CNHKX0/sikh-gurudwara-at-manikaran-parvati-valley-india-CNHKX0.jpg",
+          "https://www.oyorooms.com/travel-guide/wp-content/uploads/2020/01/Generic-3-12.jpg",
       },
       {
         title: "Mall Road",
         subtitle: "Shimla",
         description: "A piece of heaven",
         image:
-          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1556258419/The%20Famous%20Ridge_1556257575.jpg",
       },
       {
         title: "Dalai Lama Temple",
         subtitle: "Mcleodganj",
         description: "A little Dhasa",
         image:
-          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/93/6c/be/gyuto-monastery.jpg?w=300&h=300&s=1",
       },
       {
         title: "Gilbert Trail",
         subtitle: "Kasauli",
-        description: "Popular hiking destination in the mountains with picturesque views & a tranquil atmosphere.",
+        description: "Popular hiking destination",
         image:
           "https://images.thrillophilia.com/image/upload/s--aX2rKgyV--/c_fill,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/249/988/original/1588586108_5581f6a5-f4bc-47ab-b71e-0f72368549c8-istock-1193123139.png.jpg?1588586108",
       },
@@ -310,7 +318,7 @@ const States = [
       {
         title: "Govardhan Hill",
         subtitle: "Mathura",
-        description: "Sacred Hindu site in the Mathura district of Uttar Pradesh",
+        description: "Sacred Hindu site in the Mathura district",
         image:
           "https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2016/02/04/457178-govardhan-parvat.jpg",
       },
@@ -333,7 +341,7 @@ const States = [
       {
         title: "Sabarmati Riverfront",
         subtitle: "Ahmedabad",
-        description: "A waterfront developed along the banks of Sabarmati river in Ahmedabad",
+        description: "A waterfront developed along the banks of Sabarmati river",
         image:
           "https://sabarmatiriverfront.com/wp-content/uploads/2020/06/slider4.jpg",
       },
@@ -354,14 +362,14 @@ const States = [
       {
         title: "Diu Fort",
         subtitle: "Diu",
-        description: " Portuguese-built fortification located on the west coast of India in Diu",
+        description: " Portuguese-built fortification located in Diu",
         image:
           "https://makeithappen.co.in/wp-content/uploads/2021/12/Diu-Fort-G1-Mobile-2.jpg",
       },
       {
         title: "Bhuj Fort",
         subtitle: "Bhuj",
-        description: "a fort located in the outskirts of the town of Bhuj in the district of Kutch",
+        description: "a fort located in the outskirts of Bhuj",
         image:
           "https://www.vtvgujarati.com/sites/default/files/news_image/bhujia-fort.jpg",
       },
@@ -398,14 +406,14 @@ const States = [
       {
         title: "Aru Valley",
         subtitle: "Kashmir",
-        description: "Juxtaposed against the snow-covered Himalayan peaks, Aru Valley is an enthralling village in Kashmir.",
+        description: "Aru Valley is an enthralling village in Kashmir.",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/e/ef/Aruvillage.jpg",
       },
       {
         title: "Sonamarg ",
         subtitle: "Jammu And Kashmir",
-        description: "A hill station located in the Ganderbal District of Jammu and Kashmir",
+        description: "A hill station located in the Ganderbal District ",
         image:
           "https://www.holidify.com/images/bgImages/SONAMARG.jpg",
       },
@@ -421,7 +429,7 @@ const States = [
       {
         title: "Mysore Palace",
         subtitle: "Mysore",
-        description: "Official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore.",
+        description: "Official residence of the Wadiyar dynasty.",
         image:
           "https://bangalore247.in/wp-content/uploads/2021/03/Mysore-Palace.jpg",
       },
@@ -449,7 +457,7 @@ const States = [
       {
         title: "Lalbagh Botanical Garden",
         subtitle: "Bengaluru",
-        description: "An botanical garden in Bangalore, India, with an over 200-year history.",
+        description: "An botanical garden with an over 200-year history.",
         image:
           "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_154851008_20200123162547_20200123162603.png",
       },
@@ -472,7 +480,7 @@ const States = [
       {
         title: "Promendade Beach",
         subtitle: "Pondicherry",
-        description: "It is a 1.2-kilometre-long stretch in Pondicherry, starts from War Memorial and end at Dupleix Park on the Goubert Avenue.",
+        description: "Starts from War Memorial and ends at Dupleix Park on the Goubert Avenue.",
         image:
           "https://www.tourmyindia.com/states/puducherry/images/promenade-beach1.jpg",
       },
@@ -486,14 +494,14 @@ const States = [
       {
         title: "Vivekananda Rock",
         subtitle: "Kanyakumari",
-        description: "The memorial stands on one of the two rocks located about 500 meters off mainland of Vavathurai.",
+        description: "A popular tourist destination.",
         image:
           "https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/vivekananda-rock-memorial-1655195795_ac72566bd8720c988c09.webp",
       },
       {
         title: "Thillai Nataraja Temple",
         subtitle: "Chidambaram",
-        description: "A Hindu temple dedicated to Nataraja, the form of Shiva as the lord of dance.",
+        description: "A Hindu temple dedicated to Nataraja.",
         image:
           "https://www.templepurohit.com/wp-content/uploads/2015/02/Thillai-Nataraja-Temple-Chidambaram.jpg",
       },
@@ -509,7 +517,7 @@ const States = [
       {
         title: "Ajanta and Ellora Caves",
         subtitle: "Aurangabad",
-        description: " It is one of the largest rock-cut Hindu temple cave complexes in the world, with artwork dating from the period 600–1000 CE.",
+        description: "One of the largest rock-cut Hindu temple cave complexes in the world.",
         image:
           "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/31/92/93.jpg",
       },
@@ -523,7 +531,7 @@ const States = [
       {
         title: "Gateway Of India",
         subtitle: "Mumbai",
-        description: "An arch-monument built in the early 20th century in the city of Mumbai",
+        description: "Arch-monument built in the early 20th century in the city of Mumbai",
         image:
           "https://yometro.com/images/places/gateway-of-india.jpg",
       },
@@ -537,7 +545,7 @@ const States = [
       {
         title: "Pandav Leni Caves",
         subtitle: "Nashik",
-        description: "Trirashmi Leni, are a group of 23 caves carved between the 1st century BCE and the 3rd century CE",
+        description: "A group of 23 caves carved between the 1st century BCE and the 3rd century CE",
         image:
           "https://www.trawell.in/admin/images/upload/1316521000Nashik_Pandavleni_Caves_Main.jpg",
       },
@@ -565,25 +573,25 @@ const States = [
           "https://www.planetware.com/photos-large/IND/india-delhi-qutub-minar.jpg",
       },
       {
-        title: "Mimisa Rocks",
+        title: "The Lotus Temple",
         subtitle: "Delhi",
-        description: "A piece of heaven",
+        description: "Flower-shaped architecture House of Worship",
         image:
-          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://upload.wikimedia.org/wikipedia/commons/f/fc/LotusDelhi.jpg",
       },
       {
-        title: "Four",
+        title: "Mahatma Gandhi Memorial",
         subtitle: "Delhi",
-        description: "A piece of heaven",
+        description: "This is where Gandhiji spent the last days of his life",
         image:
-          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "http://travelthruhistory.com/wp-content/uploads/2018/09/Raj-Ghat.jpg",
       },
       {
-        title: "Five",
+        title: "The Jantar Mantar Observatory",
         subtitle: "Delhi",
-        description: "A piece of heaven",
+        description: "A collection of 19 astronomical instruments",
         image:
-          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://upload.wikimedia.org/wikipedia/commons/b/b8/Jantar_Mantar%2C_New_Delhi_%28Misra_Yantra%29.jpg",
       },
     ],
   },
@@ -595,39 +603,39 @@ const States = [
     url: s14,
     slides: [
       {
-        title: "Machu Picchu",
-        subtitle: "Bihar",
-        description: "Adventure is never far away",
+        title: "Bodhgaya",
+        subtitle: "Gaya",
+        description: "A Transit point for Buddhist pilgrimage centre of Bodhgaya",
         image:
-          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://www.tourmyindia.com/blog//wp-content/uploads/2015/08/gaya-bihar.jpg",
       },
       {
-        title: "Chamonix",
-        subtitle: "Bihar",
-        description: "Let your dreams come true",
+        title: "Nalanda Archaeological Museum",
+        subtitle: "Nalanda",
+        description: "A perfect reminisce to the time of flourishing Gupta and Pala period",
         image:
-          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://www.tourmyindia.com/blog//wp-content/uploads/2015/08/nalanda-bihar.jpg",
       },
       {
-        title: "Mimisa Rocks",
-        subtitle: "Bihar",
-        description: "A piece of heaven",
+        title: "Kumhrar",
+        subtitle: "Patna",
+        description: "Remains of the ancient city of Pataliputra",
         image:
-          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ruins_of_Patliputra_at_Kumhrar.JPG/640px-Ruins_of_Patliputra_at_Kumhrar.JPG",
       },
       {
-        title: "Four",
-        subtitle: "Bihar",
-        description: "A piece of heaven",
+        title: "Sher Shah Suri Tomb",
+        subtitle: "Sasaram",
+        description: "Built in 1545 AD in the memory of Emperor Sher Shah Suri",
         image:
           "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
       },
       {
-        title: "Five",
-        subtitle: "Bihar",
-        description: "A piece of heaven",
+        title: "Kesaria Stupa",
+        subtitle: "Kesaria",
+        description: "Reckoned to be the tallest and largest Buddha Stupa in India",
         image:
-          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://www.tourmyindia.com/blog//wp-content/uploads/2015/08/kesaria-stupa-kesaria.jpg",
       },
     ],
   },
@@ -639,85 +647,395 @@ const States = [
     url: s15,
     slides: [
       {
-        title: "Machu Picchu",
-        subtitle: "Sikkim",
-        description: "Adventure is never far away",
+        title: "Tsomgo Lake",
+        subtitle: "Gangtok",
+        description: "A water body made of a glacier",
         image:
-          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://images.thrillophilia.com/image/upload/s--46vo6IK_--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/119/275/original/1509529482_Tsomgo-lake.jpg.jpg",
       },
       {
-        title: "Chamonix",
+        title: "Nathula Pass",
         subtitle: "Sikkim",
-        description: "Let your dreams come true",
+        description: "One of the three open trading border posts between India and China",
         image:
-          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://images.thrillophilia.com/image/upload/s--KnHorTXg--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/119/301/original/1528467049_shutterstock_1040248213.jpg.jpg",
       },
       {
-        title: "Mimisa Rocks",
+        title: "Yumthang",
+        subtitle: "Sikkim",
+        description: "Valley Of FLowers",
+        image:
+          "https://images.thrillophilia.com/image/upload/s--nnQK1nKW--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/119/282/original/1613028861_shutterstock_156153566.jpg.jpg",
+      },
+      {
+        title: "Gurudongmar Lake",
         subtitle: "Sikkim",
         description: "A piece of heaven",
         image:
-          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://images.thrillophilia.com/image/upload/s--DxHpre_3--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/131/496/original/1535438816_Buddhist_Flag_flutters_in_GuruDongmar_Lake.JPG.jpg",
       },
       {
-        title: "Four",
+        title: "Singalila",
         subtitle: "Sikkim",
-        description: "A piece of heaven",
+        description: "Singalila Ridge is a north south mountain ridge ",
         image:
-          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
-      },
-      {
-        title: "Five",
-        subtitle: "Sikkim",
-        description: "A piece of heaven",
-        image:
-          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://whitemagicadventure.com/sites/default/files/tripmain/Singalia%20Ridge.jpg",
       },
     ],
   },
   {
     key: 15,
-    stateName: "North-East India",
+    stateName: "Arunachal Pradesh",
     content:
       "The north - east region is best described as the virgin land, untouched by modernizations that have engulfed the world.If you are a travel lover and want to explore the unexplored, mysterious yet extremely beautiful places in India, the north - east is where you should head to.",
     url: s16,
     slides: [
       {
-        title: "Machu Picchu",
-        subtitle: "North-East India",
-        description: "Adventure is never far away",
+        title: "Sela Pass",
+        subtitle: "Tawang",
+        description: " Sela Pass is a high-altitude mountain pass ",
         image:
-          "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://upload.wikimedia.org/wikipedia/commons/a/a1/Tawang_Gate.jpg",
       },
       {
-        title: "Chamonix",
-        subtitle: "North-East India",
-        description: "Let your dreams come true",
+        title: "Ziro Valley",
+        subtitle: "Ziro",
+        description: "It is famous for paddy-cum-pisciculture cultivation.",
         image:
-          "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://www.nativeplanet.com/img/2017/06/29-1498707446-6.jpg",
       },
       {
-        title: "Mimisa Rocks",
-        subtitle: "North-East India",
-        description: "A piece of heaven",
+        title: "Bomdila Monastery",
+        subtitle: "Bombdila",
+        description: "A religious monastery",
         image:
-          "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://www.tourmyindia.com/states/arunachalpradesh/images/bomdila-monastery1.jpg",
       },
       {
-        title: "Four",
-        subtitle: "North-East India",
-        description: "A piece of heaven",
+        title: "Daying Ering Wildlife Sanctuary",
+        subtitle: "Pasighat",
+        description: "Home to different species of plants, wild animals, trees and birds. ",
         image:
-          "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://tourismnewslive.com/wp-content/uploads/2018/11/D%E2%80%99Ering-Memorial-Wildlife-Sanctuary.png",
       },
       {
-        title: "Five",
-        subtitle: "North-East India",
-        description: "A piece of heaven",
+        title: "Nuranang Falls",
+        subtitle: "Tawang District",
+        description: "One of the most spectacular waterfalls of the country",
         image:
-          "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+          "https://upload.wikimedia.org/wikipedia/commons/8/83/Bong_bong_falls.jpg",
       },
     ],
   },
+  {
+    key: 16,
+    stateName: "Assam",
+    content:
+      "Assam is a state in northeastern India known for its wildlife, archeological sites and tea plantations..",
+    url: s17,
+    slides: [
+      {
+        title: "Kaziranga National Park",
+        subtitle: "Kaziranga",
+        description: "Home To One-horned Rhinoceros",
+        image:
+          "https://www.kaziranganationalpark-india.com/blog/wp-content/uploads/2022/08/kaziranga-wildlife-2.jpg",
+      },
+      {
+        title: "Kamakhya Temple",
+        subtitle: "Guwahati",
+        description: "One of the oldest and most revered centres of Tantric practices",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/0/0e/Kamakhya_Guwahati.JPG",
+      },
+      {
+        title: "Majuli Island",
+        subtitle: "Majuli",
+        description: "Is the world’s largest river island",
+        image:
+          "https://www.lostwithpurpose.com/wp-content/uploads/2017/11/DSC05180.jpg",
+      },
+      {
+        title: "Kakochang Waterfalls",
+        subtitle: "Jorhat",
+        description: "Magnificent wonder of nature.",
+        image:
+          "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/02/Kakochang-Waterfalls.jpg",
+      },
+      {
+        title: "Umananda Island",
+        subtitle: "Guwahati",
+        description: "It is one of the smallest island in the world",
+        image:
+          "https://www.swantour.com/sites/default/files/Umananda-Island.jpg",
+      },
+    ],
+  },
+  {
+    key: 17,
+    stateName: "Meghalaya",
+    content:
+      "Meghalaya is also the home to a large variety of fruits, vegetables, spices, and medicinal plants and it is also famous for its large variety of orchids",
+    url: s18,
+    slides: [
+      {
+        title: "Nohkalikai Waterfalls",
+        subtitle: "Cherrapunji",
+        description: "Nohkalikai Falls is the tallest plunge waterfall in India.",
+        image:
+          "https://travelmelodies.com/wp-content/uploads/2020/06/travel-melodies-nohkalikai-falls-meghalaya-india-asia.jpg",
+      },
+      {
+        title: "Shillong Peak",
+        subtitle: "Shillong",
+        description: "Highest point of Shillong offering panoramic views of the city",
+        image:
+          "https://www.holidify.com/images/cmsuploads/compressed/19789451800_fd10a1d760_b_20170609175146.jpg",
+      },
+      {
+        title: "Kyllang Rock",
+        subtitle: "West Khasi Hills",
+        description: "A giant grey dome that juts out of the pine forests of West Khasi Hills",
+        image:
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/3a/a6/ed/filename-kyllang-rock.jpg?w=500&h=400&s=1",
+      },
+      {
+        title: "Baghmara",
+        subtitle: "South Garo Hills",
+        description: "Houses exotic wildlife.",
+        image:
+          "https://www.holidify.com/images/bgImages/BAGHMARA.jpg",
+      },
+      {
+        title: "Mawsmai Cave",
+        subtitle: "Cherrapunji",
+        description: "A thrilling escapade.",
+        image:
+          "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1185635497_20191112161605_20191112161623.png",
+      },
+    ],
+  },
+  {
+    key: 18,
+    stateName: "Manipur",
+    content:
+      "Manipur is a state in Northeast India. It is bounded by the Indian states of Nagaland to the north, Mizoram to the south and Assam to the west.",
+    url: s19,
+    slides: [
+      {
+        title: "Loktak Lake",
+        subtitle: "Sendra Island",
+        description: "The only floating lake in the world.",
+        image:
+          "https://static.india.com/wp-content/uploads/2022/07/Collage-Maker-10-Jul-2022-10.31-AM.jpg",
+      },
+      {
+        title: "Keibul Lamjao National Park",
+        subtitle: "Bishnupur",
+        description: "Explore The Wilderness",
+        image:
+          "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/Keibul-Lamjao-National-Park.jpg",
+      },
+      {
+        title: "Tharon Cave",
+        subtitle: "Tamenglong",
+        description: "Consists of carvings and excavations of Hovnanian Culture of North Vietnam.",
+        image:
+          "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/Tharon-Cave.jpg",
+      },
+      {
+        title: "Shree Govindajee Temple",
+        subtitle: "Imphal",
+        description: "The Beautiful White Dome Structure.",
+        image:
+          "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/Shree-Govindajee-Temple.jpg",
+      },
+      {
+        title: "Dal Madol ",
+        subtitle: "Bishnupur",
+        description: "Built To Fight The Maratha Invasion",
+        image:
+          "https://www.tourmyindia.com/states/manipur/images/dal-madol1.jpeg",
+      },
+    ],
+  },
+  {
+    key: 19,
+    stateName: "Tripura",
+    content:
+      "Tripura is a hilly state in northeast India, bordered on 3 sides by Bangladesh, and home to a diverse mix of tribal cultures and religious groups",
+    url: s20,
+    slides: [
+      {
+        title: "Ujjayanta Palace.",
+        subtitle: "Agartala",
+        description: "A museum and the former palace of the Kingdom of Tripura situated in Agartala,",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/8/88/Uajjayanta_Palace.jpg",
+      },
+      {
+        title: "Neermahal",
+        subtitle: "Melaghar",
+        description: "The Water Palace Of Tripura",
+        image:
+          "https://www.taleof2backpackers.com/wp-content/uploads/2019/12/Neermahal-Palace-Tripura.jpg",
+      },
+      {
+        title: "Dumboor Lake",
+        subtitle: "Gandacherra",
+        description: " A charming water body",
+        image:
+          "https://tripuratourism.gov.in/media/191/download/Dumboor.png",
+      },
+      {
+        title: "Sundari Temple",
+        subtitle: "Udaipur",
+        description: "Hindu temple of the Goddess Tripura Sundari, locally known as Devi Tripureshwari.",
+        image:
+          "https://www.holidify.com/images/cmsuploads/compressed/41948912_20180301115544.jpg",
+      },
+      {
+        title: "Jampui Hills ",
+        subtitle: "Kumaragha",
+        description: "A part of the Mizo hills range located in the North Tripura district",
+        image:
+          "https://ttaadc.gov.in/sites/default/files/styles/media_gallery_large/public/Jampui%20Hills%20%284%29.JPG?itok=Ll90lJIC",
+      },
+    ],
+  },
+  {
+    key: 20,
+    stateName: "Nagaland",
+    content:
+      "Nagaland is a mountainous state in northeast India, bordering Myanmar and is home to diverse indigenous tribes",
+    url: s21,
+    slides: [
+      {
+        title: "Dzukou Valley.",
+        subtitle: "Kohima",
+        description: "Most famous for its multicolored carpets of flowers that bloom in summer",
+        image:
+          "https://www.lostwithpurpose.com/wp-content/uploads/2017/06/DSC07177.jpg",
+      },
+      {
+        title: "Kachari ruins",
+        subtitle: "Dimapur",
+        description: "A set of ruins located in Dimapur, Nagaland in Northeast India.",
+        image:
+          "https://media-cdn.tripadvisor.com/media/photo-s/0e/62/13/76/pillars-at-kachari-ruins.jpg",
+      },
+      {
+        title: "Longkhum",
+        subtitle: "Mokokchung",
+        description: "It is the highest altitude Village of the Ao Region",
+        image:
+          "https://static2.tripoto.com/media/filter/tst/img/317329/TripDocument/1475944350_view.jpg",
+      },
+      {
+        title: "Mount Tiyi",
+        subtitle: "Wokha",
+        description: "Associated with many supernatural beliefs and is also known as the mountain of life.",
+        image:
+          "https://www.tourmyindia.com/states/nagaland/images/mount-tiyi-1.jpg",
+      },
+      {
+        title: "Peren",
+        subtitle: "Benreu",
+        description: "The Green District of Nagaland,",
+        image:
+          "https://www.morungexpress.com/uploads/2020/09/77780948_1600009705_Aerial%20view%20of%20Old%20Peren%20Town.%20(Photo%20Courtesy%20Peren.nic.in).jpg",
+      },
+    ],
+  },
+  {
+    key: 21,
+    stateName: "Mizoram",
+    content:
+      "Known for its evergreen hills and dense bamboo jungles, Mizoram lies in the southern most tip of north east India.",
+    url: s22,
+    slides: [
+      {
+        title: "Hmuifang",
+        subtitle: "Aizawl",
+        description: "The mountain is covered with forests reserves since all the Mizo Chief's time.",
+        image:
+          "https://ffo.gov.in/uploads/location_photos/hmuifang-mizoramjourneywordpresscom.jpg",
+      },
+      {
+        title: "Khawnglung wildlife sanctuary",
+        subtitle: "Lunglei",
+        description: "A natural shelter for man and animal for ages.",
+        image:
+          "https://www.hlimg.com/images/things2do/738X538/99_1523012968t.jpg",
+      },
+      {
+        title: "Dampa Wildlife Sanctuary",
+        subtitle: "Mamit",
+        description: "A tiger reserve of western Mizoram, India.",
+        image:
+          "https://cdn.s3waas.gov.in/s3185e65bc40581880c4f2c82958de8cfe/uploads/bfi_thumb/2018073050-olw705qw2fsvgmbeawy9crsg4bkyel7wkv0jkddx8q.jpg",
+      },
+      {
+        title: "Vantawng Waterfalls",
+        subtitle: "Serchhip",
+        description: "Mizoram boasts of having the 13th highest waterfall in the country",
+        image:
+          "https://cdn.s3waas.gov.in/s36766aa2750c19aad2fa1b32f36ed4aee/uploads/bfi_thumb/2018040459-olw8ynn4n4b27rwyndyyczd00o3zpd369sfjbguykq.jpg",
+      },
+      {
+        title: "Chhimmtuipi River ",
+        subtitle: "Phawngpui",
+        description: "Known as the Kaladan river flows in a southerly direction through Myanmar.,",
+        image:
+          "https://pbs.twimg.com/media/E_Kn4-wVkAMHnzS.jpg",
+      },
+    ],
+  },
+  {
+    key: 22,
+    stateName: "Uttarakhand",
+    content:
+      "Uttarakhand is known for the natural environment of the Himalayas, the Bhabar and the Terai regions.",
+    url: s23,
+    slides: [
+      {
+        title: "Sahastradhara",
+        subtitle: "Dehradun",
+        description: "Thousand Fold Spring",
+        image:
+          "https://www.holidify.com/images/cmsuploads/compressed/Sahastradhara-Dehradun-925752519-4250723-1_20171121221603.jpg",
+      },
+      {
+        title: "Naini Lake",
+        subtitle: "Nainital",
+        description: "A natural freshwater body, situated amidst the town of Nainital",
+        image:
+          "https://nainitaltourism.org.in/images/places-to-visit/headers/naini-lake-nainital-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+      },
+      {
+        title: "Jim Corbett National Park",
+        subtitle: "Ramnagar",
+        description: "Rich in flora and fauna, it is known for its Bengal tigers.",
+        image:
+          "http://uttarakhandtourism.gov.in/sites/default/files/2020-07/Jungle%20safari.jpg",
+      },
+      {
+        title: "Lakshman Jhula",
+        subtitle: "Rishikesh",
+        description: "A suspension bridge across the river Ganges.",
+        image:
+          "https://bugyalvalley.com/wp-content/uploads/2019/11/lakshman-jhula.jpg",
+      },
+      {
+        title: "Chardham  ",
+        subtitle: "Uttarakhand",
+        description: "Tour of four holy sites - Yamunotri, Gangotri, Kedarnath and Badrinath",
+        image:
+          "https://www.shrineyatra.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-30-at-9.54.57-PM.jpeg",
+      },
+    ],
+  },
+  
+  
 ];
 export default States;

@@ -1,29 +1,35 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
-// import Results from "../database/resp.json";
 import "./topPlacesResp.css"
+import {getTopSights} from '../../api/apiRoutes';
+import LoadingBar from '../LoadingBar/LoadingBar';
 
 export default function TopPlacesResp({id}) {
   const [topPlacesArr, setTopPlacesArr] = useState([]);
-  console.log(id);
+  const [loading, setLoading] = useState(true);
 
+  
   useEffect(() => {
+    let wantResults = true;
+    setLoading(true);
     (async () => {
-      const url = `/top-sights/?id=${id}`
-      // console.log(id);
-      const resp = await fetch(url);
-
-      if (resp.status === 200) {
-        const data = await resp.json();
-        console.log(data);
+      const data = await getTopSights(id);
+      if (wantResults) {
         setTopPlacesArr(data.topPlaces);
-        console.log(data);
+        setLoading(false);
       }
     })();
-  })
+    return () => {
+      wantResults = false;
+      setLoading(false);
+      setTopPlacesArr([]);
+    }
+  }, [id]);
+
   return (
+    <>
+    {loading ? <LoadingBar /> : <></>}
     <div className='topPlacesResult ' >
-      <h1 className="topPlacesResultHeading">Top Places Results:</h1>
+      <h1 className="topPlacesResultHeading">Top Places Results: {id}</h1>
       <hr style={{
         display: 'block',
         marginTop: '0.5em',
@@ -34,11 +40,11 @@ export default function TopPlacesResp({id}) {
         borderWidth: '2px',
       }} />
       <ul class="cards results">
-        {topPlacesArr.map((spots) => {
+        {topPlacesArr.map((spots, indx) => {
           return (
 
-            <li>
-              <a href="" class="card">
+            <li className='topPlacesCards' key={indx}>
+              <a href="/" class="card">
                 <img src={spots.image} class="card__image" alt="" />
                 <div class="card__overlay">
                   <div class="card__header">
@@ -57,5 +63,6 @@ export default function TopPlacesResp({id}) {
         })}
       </ul>
     </div>
+    </>
   )
 }

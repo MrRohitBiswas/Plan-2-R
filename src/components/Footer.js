@@ -17,7 +17,7 @@ export default function footer() {
                   </h2>
                   <img
                     src={icon}
-                    alt
+                    alt = "Icon"
                     className="siteIcon"
                     style={{ height: 150, width: 180 }}
                   />
@@ -50,7 +50,7 @@ export default function footer() {
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="py-1 d-block qL">
+                        <a href="/" className="py-1 d-block qL">
                           Help &amp; Support
                         </a>
                       </li>
@@ -66,20 +66,20 @@ export default function footer() {
             <p className="copyright">
               Copyright © All rights reserved |
               <i className="ion-ios-heart" /> from{" "}
-              <a href="https://www.TourCirKit.com" target="_blank">
+              <a href="https://www.TourCirKit.com" target="_blank" rel="noopener noreferrer">
                 TourCirKit.com
               </a>
             </p>
           </div>
           <div className="tnc2">
             <p className="list-unstyled">
-              <a className="" href="#">
+              <a className="" href="/">
                 Terms |
               </a>
-              <a className="" href="#">
+              <a className="" href="/">
                 Privacy |
               </a>
-              <a className="" href="#">
+              <a className="" href="/">
                 Compliances
               </a>
             </p>

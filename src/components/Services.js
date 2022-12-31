@@ -9,6 +9,8 @@ import HomePage from "./Home";
 import "./ServiceSearchBar.css";
 
 export default function Services() {
+  console.log('Service component renders');
+
   $(".buy").click(function () {
     $(".bottom").addClass("clicked");
   });
@@ -52,6 +54,7 @@ export default function Services() {
   });
 
 
+
   return (
     <div>
       <HomePage />
@@ -91,6 +94,7 @@ export default function Services() {
                     type="text"
                     placeholder="Search State"
                   />
+                
                   <button className="clear" id="clear">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -119,10 +123,11 @@ export default function Services() {
               <div key={CurrState.key} className="wrapper my-3">
                 <Link
                   to={{
-                    pathname: "/SearchState",
+                    pathname: `/SearchState/${CurrState.stateName}`,
                     State: { ...CurrState },
                   }}
                 >
+                {/* <Link to={`/SearchState/?${CurrState.stateName}`}> */}
                   <div className="container">
                     <div
                       className="top"
