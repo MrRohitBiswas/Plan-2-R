@@ -76,9 +76,9 @@ export default function HotelDetails() {
       <div className="room-wrap d-md-flex">
         <a href="/" className={imgClass} style={{backgroundImage: `url(${imgUrl})`  }} />
         <div className={cssClass}>
-          <div className="text p-4 p-xl-5 text-center">
+          <div className="text text-center">
             <p className="star mb-0"><span className="fa fa-star" /><span className="fa fa-star" /><span className="fa fa-star" /><span className="fa fa-star" /><span className="fa fa-star" /></p>
-            <h3 className="mb-3"><a href="rooms.html">{currHotel.name || currHotel.hotel}</a></h3>
+            <h3 className="mb-3 hotelCardsTitle"><a href="rooms.html">{currHotel.name || currHotel.hotel}</a></h3>
             <ul className="list-accomodation">
             {featuresArr.map((feature, indx) => {
               return (
