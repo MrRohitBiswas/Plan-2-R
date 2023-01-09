@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import LoadingBar from "./LoadingBar/LoadingBar";
+import { Helmet } from "react-helmet";
 export default function Home() {
   const handleClickScroll = () => {
     const element = document.getElementById('serviceStates');
@@ -10,20 +10,17 @@ export default function Home() {
     }
   };
   
-  //Loading
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
 
   
   return (
     
+    
     <div className="homePage" id="homePageStart">
-      {loading ? <LoadingBar /> : <></>}
+      
+      <Helmet>
+        <title>Tour CirKit | Homepage</title>
+        <meta name='Homepage of TourCirKit' content='Get started with the experience of all new unique tour planning app'/>
+      </Helmet>
       <div className="container homepageContent" style={{height: "fit-content"}}>
         <h1 className="homepageTitle">Tour <span className="homepageSpan">CirKit</span></h1>
         <p className="homepageDesc">The first step of your adventure... <br />

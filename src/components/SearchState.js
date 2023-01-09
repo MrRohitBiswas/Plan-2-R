@@ -5,7 +5,7 @@ import "./SearchState.css";
 import "./HotelsButton.scss";
 import SearchStateCarousel from "./SearchStateCarousel";
 import TopPlacesResp from "./topPlaces/TopPlacesResp";
-
+import { Helmet } from "react-helmet";
 export default function SearchState() {
   const [searchText, setSearchText] = useState();
 
@@ -14,7 +14,6 @@ export default function SearchState() {
   }, []);
   const location = useLocation();
   const State = location.State;
-  const stateName = State !== undefined ? State.stateName : null;
   const param = useParams();
   const loc = param.id;
 
@@ -36,15 +35,6 @@ export default function SearchState() {
     });
   });
 
-  //Loading
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-
   const history = useHistory();
 
   const searchFunc = async (e) => {
@@ -57,6 +47,11 @@ export default function SearchState() {
 
   return (
     <div>
+      
+      <Helmet>
+        <title>Tour CirKit | {loc}</title>
+        <meta name='Services Provided' content='All services provided by us, browse sstates and search wherever you plan to travel'/>
+      </Helmet>
       <div>{State && <SearchStateCarousel slides={State.slides || null} />}</div>
       <>
       
@@ -105,8 +100,9 @@ export default function SearchState() {
 
       <Link
         to={`/HotelDetails/${loc}`}
-        class="button2"
-        style={{ marginLeft: "100px", cursor: "pointer" }}
+        className="button2"
+        id="hotelDetailsButton"
+        style={{cursor: "pointer" }}
       >
         <span></span>
         <span></span>

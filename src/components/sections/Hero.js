@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
@@ -70,10 +71,12 @@ const Hero = ({
                 <ButtonGroup style ={{
                   paddingTop:"10px"
                 }}>
-                  <Button tag="a" color="primary" wideMobile to="/Services">
+                  <Link to ="/Services" >
+                  <Button tag="a" color="primary">
                     CirKit a Tour
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/MrRohitBiswas/">
+                    </Link>
+                  <Button tag="a" color="dark" href="https://github.com/MrRohitBiswas/">
                     Connect with Us
                     </Button>
                 </ButtonGroup>

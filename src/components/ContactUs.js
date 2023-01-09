@@ -5,8 +5,6 @@ import FeaturesTiles from './sections/FeaturesTiles';
 import FeaturesSplit from './sections/FeaturesSplit';
 import Testimonial from './sections/Testimonial';
 import Cta from './sections/Cta';
-import LoadingBar from "./LoadingBar/LoadingBar";
-import {useLocation} from 'react-router-dom';
 
 const Home = () => {
   

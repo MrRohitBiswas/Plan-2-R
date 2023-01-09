@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 import $ from "jquery";
 import "./components/MainService.scss";
-import bg from "./components/bg.jpg";
+import bg from "./components/bg.webp";
 import States from "./States";
 import HomePage from "./Home";
 import "./ServiceSearchBar.css";
+import { Helmet } from "react-helmet";
 
 export default function Services() {
   console.log('Service component renders');
@@ -57,6 +58,11 @@ export default function Services() {
 
   return (
     <div>
+      
+      <Helmet>
+        <title>Tour CirKit | Services</title>
+        <meta name='Services Provided' content='All services provided by us, browse sstates and search wherever you plan to travel'/>
+      </Helmet>
       <HomePage />
       <div
         className="contents"

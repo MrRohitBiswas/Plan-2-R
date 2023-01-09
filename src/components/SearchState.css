@@ -2,6 +2,14 @@
     z-index: 10;
     
 }
+#hotelDetailsButton{
+  margin-left: 100px;
+}
+@media (max-width: 426px) {
+  #hotelDetailsButton{
+    margin-left: 25px;
+  }
+}
 .SearchContainer {
     font-family: 'Montserrat Alternates', sans-serif;
     color: #FFFF00;

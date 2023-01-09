@@ -1,7 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import icon from "./components/fav.png";
 export default function footer() {
+  
+  const handleClickScrollService = () => {
+    const element = document.getElementById('serviceStates');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div>
       <footer className="footer-02">
@@ -22,8 +30,7 @@ export default function footer() {
                     style={{ height: 150, width: 180 }}
                   />
                   <p>
-                    CirKit is always there to help you to plan the best suited
-                    tour for your journey up ahead !
+                    CirKit is always there to help you to plan the best suited tour for your journey up ahead!
                   </p>
                 </div>
               </div>
@@ -35,24 +42,24 @@ export default function footer() {
                     <h2 className="footer-heading QLHead">Quick Links</h2>
                     <ul className="list-unstyled">
                       <li>
-                        <a href="/Services" className="py-1 d-block qL">
+                        <Link to="/Services" onClick={handleClickScrollService} className="py-1 d-block qL">
                           Services
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/ContactUs" className="py-1 d-block qL">
+                        <Link to="/Contact" className="py-1 d-block qL">
                           About Us
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/LogReg" className="py-1 d-block qL">
+                        <Link to="/LogReg" className="py-1 d-block qL">
                           Login
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/" className="py-1 d-block qL">
+                        <Link to="/" className="py-1 d-block qL">
                           Help &amp; Support
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -66,7 +73,7 @@ export default function footer() {
             <p className="copyright">
               Copyright © All rights reserved |
               <i className="ion-ios-heart" /> from{" "}
-              <a href="https://www.TourCirKit.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://tourcirKit.com" target="_blank" rel="noopener noreferrer">
                 TourCirKit.com
               </a>
             </p>

@@ -4,7 +4,10 @@
     width: 100vw;
     position: absolute;
     z-index: 99;
+    overflow: hidden;
   }
+
+
   
   #load {
     position:relative;
@@ -13,7 +16,7 @@
     left:50%;
     top:40%;
     margin-left:-300px;
-    overflow:visible;
+    overflow:hidden;
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;

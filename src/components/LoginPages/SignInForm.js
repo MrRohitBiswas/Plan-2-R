@@ -4,6 +4,7 @@ import {
   FacebookLoginButton,
   InstagramLoginButton,
 } from "react-social-login-buttons";
+import Helmet from "react-helmet";
 
 class SignInForm extends Component {
   constructor() {
@@ -38,10 +39,15 @@ class SignInForm extends Component {
   render() {
     return (
       <div className="formCenter">
+        
+      <Helmet>
+        <title>Tour CirKit | Sign In</title>
+        <meta name='Sign Into Tour CirKit' content='Welcome back! Please enter your credentials to log in'/>
+      </Helmet>
         <form className="formFields" onSubmit={this.handleSubmit}>
           <div className="formField">
             <label className="formFieldLabel" htmlFor="email">
-              E-Mail Address
+              E-Mail
             </label>
             <input
               type="email"

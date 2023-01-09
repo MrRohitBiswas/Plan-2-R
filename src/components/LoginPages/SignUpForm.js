@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 class SignUpForm extends Component {
   constructor() {
@@ -36,6 +37,11 @@ class SignUpForm extends Component {
   render() {
     return (
       <div className="formCenter">
+        
+      <Helmet>
+        <title>Tour CirKit | Sign Up</title>
+        <meta name='Sign Up Tour CikKit' content='Get yourself registered in Tour CirKit to get recommendations and enhanced user experience'/>
+      </Helmet>
         <form onSubmit={this.handleSubmit} className="formFields">
           <div className="formField">
             <label className="formFieldLabel" htmlFor="name">
@@ -53,7 +59,7 @@ class SignUpForm extends Component {
           </div>
           <div className="formField">
             <label className="formFieldLabel" htmlFor="email">
-              E-Mail Address
+              E-Mail
             </label>
             <input
               type="email"

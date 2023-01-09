@@ -28,7 +28,7 @@ export default function TopPlacesResp({id}) {
   return (
     <>
     {loading ? <LoadingBar /> : <></>}
-    <div className='topPlacesResult ' >
+    <div className='topPlacesResult ' style={{height:'100vh'}}>
       <h1 className="topPlacesResultHeading">Top Places Results: {id}</h1>
       <hr style={{
         display: 'block',

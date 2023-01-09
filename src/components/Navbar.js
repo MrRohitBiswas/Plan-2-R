@@ -50,7 +50,7 @@ export default function Navbar() {
       {/* container-fluid */}
         {/* <div className=""> */}
           <div className="logo">
-            <Link to="/Services" onClick={handleClickScroll}>Tour CirKit</Link>
+            <Link to="/" onClick={handleClickScroll}>Tour CirKit</Link>
           </div>
           <div id="mainListDiv" className={menuClass}>
             <ul className="navlinks">
