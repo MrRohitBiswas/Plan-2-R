@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d7c42c7.chunk.css",
+    "main.css": "/static/css/main.a52baa32.chunk.css",
     "main.js": "/static/js/main.defd017e.chunk.js",
     "main.js.map": "/static/js/main.defd017e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.40345808.js",
@@ -8,9 +8,9 @@
     "static/js/2.e42f05ad.chunk.js": "/static/js/2.e42f05ad.chunk.js",
     "static/js/2.e42f05ad.chunk.js.map": "/static/js/2.e42f05ad.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5b70bf54bdbcf562392c6e7900ee0a18.js": "/precache-manifest.5b70bf54bdbcf562392c6e7900ee0a18.js",
+    "precache-manifest.0f4c9f6c2be8d7b610f1cbd3e3a7d4d3.js": "/precache-manifest.0f4c9f6c2be8d7b610f1cbd3e3a7d4d3.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1d7c42c7.chunk.css.map": "/static/css/main.1d7c42c7.chunk.css.map",
+    "static/css/main.a52baa32.chunk.css.map": "/static/css/main.a52baa32.chunk.css.map",
     "static/js/2.e42f05ad.chunk.js.LICENSE.txt": "/static/js/2.e42f05ad.chunk.js.LICENSE.txt",
     "static/media/ArunachalPradesh.webp": "/static/media/ArunachalPradesh.2dc2df8b.webp",
     "static/media/Assam.webp": "/static/media/Assam.7c11768d.webp",
@@ -53,7 +53,7 @@
   "entrypoints": [
     "static/js/runtime-main.40345808.js",
     "static/js/2.e42f05ad.chunk.js",
-    "static/css/main.1d7c42c7.chunk.css",
+    "static/css/main.a52baa32.chunk.css",
     "static/js/main.defd017e.chunk.js"
   ]
 }
