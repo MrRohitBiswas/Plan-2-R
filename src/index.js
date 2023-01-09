@@ -11,12 +11,26 @@ import './assets/scss/style.scss';
 
 const history = createBrowserHistory();
 
-ReactDOM.render(
-  <Router history={history}>
-    <App />
-  </Router>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <Router history={history}>
+//     <App />
+//   </Router>,
+//   document.getElementById('root')
+// );
+// //
+const rootElement = document.getElementById("root");
+
+if (rootElement.hasChildNodes()) {
+  ReactDOM.hydrate(
+    <Router history={history}>
+      <App />
+    </Router>, rootElement);
+} else {
+  ReactDOM.render(
+    <Router history={history}>
+      <App />
+    </Router>, rootElement);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

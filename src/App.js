@@ -13,7 +13,8 @@ import LayoutDefault from './layouts/LayoutDefault';
 // Views 
 
 import ContactUsEntry from './ContactUsEntry';
-
+//Helmet
+import { Helmet } from 'react-helmet';
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
@@ -23,8 +24,11 @@ const App = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Tour CirKit | Homepage</title>
+        <meta name='Homepage of TourCirKit' content='Get started with the experience of all new unique tour planning app'/>
+      </Helmet>
      <Navbar title="Tour CirKit" />
-      
         <Switch>
           <AppRoute exact path="/" component={Services} />
 

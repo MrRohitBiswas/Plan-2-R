@@ -1,19 +1,10 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useLocation} from 'react-router-dom';
 import ScrollReveal from './utils/ScrollReveal';
-import ReactGA from 'react-ga';
-import LoadingBar from './components/LoadingBar/LoadingBar';
-
+import { Helmet } from 'react-helmet';
 // Views 
 import Home from './views/Home';
 
-// Initialize Google Analytics
-ReactGA.initialize(process.env.REACT_APP_GA_CODE);
-
-const trackPage = page => {
-  ReactGA.set({ page });
-  ReactGA.pageview(page);
-};
 
 const ContactUsEntry = () => {
   
@@ -21,14 +12,6 @@ const ContactUsEntry = () => {
     window.scrollTo(0, 0)
   }, []);
 
-  //Loading
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
 
   const childRef = useRef();
   let location = useLocation();
@@ -37,9 +20,6 @@ const ContactUsEntry = () => {
     const page = location.pathname;
     document.body.classList.add('is-loaded')
     childRef.current.init();
-    trackPage(page);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-
     return () => {
       document.body.classList.remove("mystyle");
     }
@@ -47,8 +27,11 @@ const ContactUsEntry = () => {
 
   return (
     <>
-      {loading ? <LoadingBar /> : <></>}
-
+  
+  <Helmet>
+        <title>Tour CirKit | Contact Us</title>
+        <meta name='Contact Tour CirKit Developers' content='Know how the website works and contact the developers for more info'/>
+      </Helmet>
     <ScrollReveal
       ref={childRef}
       children={() => (
