@@ -5,10 +5,13 @@ import { getHotels } from "../../../api/apiRoutes";
 
 import LoadingBar from "../../LoadingBar/LoadingBar";
 import { Helmet } from "react-helmet";
-
+//ga
+import ReactGA from "react-ga"
 export default function HotelDetails() {
   useEffect(() => {
-    console.log("here useEffect runs");
+    
+//GA
+  ReactGA.pageview(window.location.pathname); //interaction event
     window.scrollTo(0, 0);
   }, []);
   const { id } = useParams();

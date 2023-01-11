@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import { HashRouter as Router, Route, NavLink } from "react-router-dom";
 import SignUpForm from "./LoginPages/SignUpForm";
 import SignInForm from "./LoginPages/SignInForm";
-
+import ReactGA from "react-ga"
 import "./LogReg.css";
 
 class LogReg extends Component {
+  
+//GA and scroll
 
-  componentDidMount(){
+componentDidMount(){
+    ReactGA.pageview(window.location.pathname); //interaction event
     window.scrollTo(0, 0);
 }
 

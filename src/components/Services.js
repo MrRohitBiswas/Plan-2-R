@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import ReactGA from "react-ga";
 import $ from "jquery";
 import "./components/MainService.scss";
 import bg from "./components/bg.webp";
@@ -10,7 +10,11 @@ import "./ServiceSearchBar.css";
 import { Helmet } from "react-helmet";
 
 export default function Services() {
-  console.log('Service component renders');
+//GA
+useEffect(() => {
+  ReactGA.pageview(window.location.pathname); //interaction event
+},)
+
 
   $(".buy").click(function () {
     $(".bottom").addClass("clicked");

@@ -6,8 +6,14 @@ import "./HotelsButton.scss";
 import SearchStateCarousel from "./SearchStateCarousel";
 import TopPlacesResp from "./topPlaces/TopPlacesResp";
 import { Helmet } from "react-helmet";
+import ReactGA from "react-ga";
 export default function SearchState() {
   const [searchText, setSearchText] = useState();
+
+  //GA
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname); //interaction event
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,21 +46,21 @@ export default function SearchState() {
   const searchFunc = async (e) => {
     e.preventDefault();
     history.push(searchText);
-
-  }
-
-  
+  };
 
   return (
     <div>
-      
       <Helmet>
         <title>Tour CirKit | {loc}</title>
-        <meta name='Services Provided' content='All services provided by us, browse sstates and search wherever you plan to travel'/>
+        <meta
+          name="Services Provided"
+          content="All services provided by us, browse sstates and search wherever you plan to travel"
+        />
       </Helmet>
-      <div>{State && <SearchStateCarousel slides={State.slides || null} />}</div>
+      <div>
+        {State && <SearchStateCarousel slides={State.slides || null} />}
+      </div>
       <>
-      
         <div className="SearchContainer ">
           <div className="Search-box">
             <div className="Search-icon">
@@ -84,11 +90,10 @@ export default function SearchState() {
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
               />
-              
-            <div className="go-icon" type='submit' onClick={searchFunc}>
-              <i className="fa fa-arrow-right" />
-            </div>
-            
+
+              <div className="go-icon" type="submit" onClick={searchFunc}>
+                <i className="fa fa-arrow-right" />
+              </div>
             </form>
           </div>
         </div>
@@ -97,12 +102,11 @@ export default function SearchState() {
         <TopPlacesResp id={loc} />
       </div>
 
-
       <Link
         to={`/HotelDetails/${loc}`}
         className="button2"
         id="hotelDetailsButton"
-        style={{cursor: "pointer" }}
+        style={{ cursor: "pointer" }}
       >
         <span></span>
         <span></span>
