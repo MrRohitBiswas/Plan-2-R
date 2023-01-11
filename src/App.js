@@ -1,7 +1,6 @@
 import React from 'react';
 import {  Switch} from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
-import ReactGA from 'react-ga';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
 import Services from './components/Services'
@@ -16,7 +15,9 @@ import ContactUsEntry from './ContactUsEntry';
 //Helmet
 import { Helmet } from 'react-helmet';
 // Initialize Google Analytics
-ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+import ReactGA from 'react-ga';
+const msr_iD ="G-1Y51BD6TYZ"; //measurement id
+ReactGA.initialize(msr_iD);
 
 
 

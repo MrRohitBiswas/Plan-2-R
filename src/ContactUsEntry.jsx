@@ -4,10 +4,16 @@ import ScrollReveal from './utils/ScrollReveal';
 import { Helmet } from 'react-helmet';
 // Views 
 import Home from './views/Home';
-
+//ga
+import ReactGA from "react-ga"
 
 const ContactUsEntry = () => {
   
+//GA
+useEffect(() => {
+  ReactGA.pageview(window.location.pathname); //interaction event
+},)
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, []);
