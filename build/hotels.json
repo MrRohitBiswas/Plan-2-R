@@ -1,0 +1,95 @@
+{
+  "_id": "63a33392e5135e448c328545",
+  "name": "West Bengal",
+  "hotels": [
+    {
+      "name": "Satyam Hotel and Restaurant",
+      "features": ["3-star hotel", "Breakfast", "Air conditioning"],
+      "price": "₹1,232",
+      "image": ""
+    },
+    {
+      "name": "Hotel Classic",
+      "features": ["2-star hotel", "Room service", "Kitchen in some rooms"],
+      "price": "₹1,231",
+      "image": ""
+    },
+    {
+      "name": "OYO 8970 New Ashoka Hotel",
+      "features": ["2-star hotel", "Breakfast", "Air conditioning"],
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Taj City Centre New Town, Kolkata",
+      "features": ["5-star hotel", "Free breakfast", "Wi-Fi"],
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "OYO 24223 Upasana Guest House",
+      "features": ["Breakfast", "Air conditioning", "Kid-friendly"],
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "OYO 25040 Hotel Victoria",
+      "features": ["Parking", "Air conditioning", "Restaurant"],
+      "price": "₹3,277",
+      "image": ""
+    },
+    {
+      "name": "Hotel Jayshree Inn",
+      "features": ["4-star hotel", "Air conditioning", "Room service"],
+      "price": "₹4,380",
+      "image": ""
+    },
+    {
+      "name": "Flagship 76255 Airport Comfort Stay",
+      "features": ["Free Wi-Fi", "Room service", "Kitchen in some rooms"],
+      "price": "₹585",
+      "image": ""
+    },
+    {
+      "name": "OYO Flagship 26243 Lake Market Kalighat",
+      "features": ["3-star hotel", "Free breakfast", "Wi-Fi"],
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "OYO 3674 Hotel Nihar Inn",
+      "features": [
+        "Room service",
+        "Kitchen in some rooms",
+        "Full-service laundry"
+      ],
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Capital O 700752 Hotel Dak Plaza",
+      "features": ["Wi-Fi", "Room service", "Kitchen in some rooms"],
+      "price": "₹918",
+      "image": ""
+    },
+    {
+      "name": "OYO 28291 Akash Ganga Stay",
+      "features": ["Air conditioning", "Kid-friendly"],
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "OYO Flagship 15738 Hotel Ag Star",
+      "features": ["3-star hotel", "Wi-Fi", "Parking"],
+      "price": "₹396",
+      "image": ""
+    },
+    {
+      "name": "Kings Crown Saltlake",
+      "features": ["Free breakfast", "Room service", "Kitchen in some rooms"],
+      "price": "₹10,484",
+      "image": ""
+    }
+  ],
+  "timestamp": "2022-12-21T16:25:54.146Z"
+}
