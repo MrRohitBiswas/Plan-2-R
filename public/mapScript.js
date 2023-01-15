@@ -1,20 +1,24 @@
-const path = window.location.pathname;
-const pathArr = path.split('/');
-if (pathArr.length === 3 && pathArr[1] === 'route') {
-  const query = pathArr[2];
-  const queryArr = query.split('&');
-  if(queryArr[0].slice(0, 4) === 'src=' && queryArr[1].slice(0, 5) === 'dest=') {
-    let tourLoc = queryArr[0].slice(4, queryArr[0].length);
-    let startAddr = queryArr[1].slice(5, queryArr[1].length);
-    let loc1, loc2;
-    getResponse(tourLoc, startAddr);
+function func() {
+
+  path = window.location.pathname;
+  const pathArr = path.split('/');
+  if (pathArr.length === 3 && pathArr[1] === 'route') {
+    const query = pathArr[2];
+    const queryArr = query.split('&');
+    if(queryArr[0].slice(0, 4) === 'src=' && queryArr[1].slice(0, 5) === 'dest=') {
+      let tourLoc = queryArr[0].slice(4, queryArr[0].length);
+      let startAddr = queryArr[1].slice(5, queryArr[1].length);
+      let loc1, loc2;
+      getResponse(tourLoc, startAddr);
+    } else {
+      document.querySelector('#map').innerHTML = 'Error';
+    }
   } else {
     document.querySelector('#map').innerHTML = 'Error';
   }
-} else {
-  document.querySelector('#map').innerHTML = 'Error';
 }
 
+func();
 
 async function getResponse(place, place2) {
   let response = await fetch(
