@@ -11,11 +11,12 @@ import HotelDetails from './components/topPlaces/hotels/HotelDetails';
 import LayoutDefault from './layouts/LayoutDefault';
 // Views 
 
-import ContactUsEntry from './ContactUsEntry';
 //Helmet
 import { Helmet } from 'react-helmet';
 // Initialize Google Analytics
 import ReactGA from 'react-ga';
+import RouteMap from './components/topPlaces/RouteMap';
+import ContactUs from './components/ContactUs';
 const msr_iD ="G-1Y51BD6TYZ"; //measurement id
 ReactGA.initialize(msr_iD);
 
@@ -33,14 +34,16 @@ const App = () => {
         <Switch>
           <AppRoute exact path="/" component={Services} />
 
-          <AppRoute exact path="/Contact" component={ContactUsEntry} layout={LayoutDefault} />
+          <AppRoute exact path="/Contact" component={ContactUs} layout={LayoutDefault} />
           <AppRoute exact path="/Services" component={Services}/>
           <AppRoute exact path="/LogReg" component={LogReg} layout={LayoutDefault} />
           <AppRoute exact path="/SearchState/:id" component={SearchState} layout={LayoutDefault}/>
           <AppRoute exact path="/HotelDetails/:id" component={HotelDetails}/>
+          <AppRoute exact path="/route/:id" component={RouteMap}/>
           
         </Switch>
         <Footer/>
+        {/* <RouteMap /> */}
       </>
  
   );
