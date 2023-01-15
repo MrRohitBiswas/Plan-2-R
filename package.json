@@ -1,0 +1,53 @@
+{
+  "name": "-tour-cirkit",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "css3": "^0.0.1",
+    "jquery": "^3.6.2",
+    "lodash": "^4.17.15",
+    "npm": "^8.15.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-ga": "^3.3.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.3.3",
+    "react-scripts": "^3.4.1",
+    "react-social-login-buttons": "^3.6.1",
+    "sass": "^1.49.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cruip/open-react-template.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
+  },
+  "reactSnap": {
+    "inlineCss": true
+  }
+}
