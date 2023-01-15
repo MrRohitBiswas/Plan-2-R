@@ -1,0 +1,33 @@
+.leaflet-routing-alt h2{
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+    color: black;
+}
+.leaflet-routing-alt h3{
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+
+}
+.leaflet-routing-alt tr{
+    line-height: .8;
+    font-size: 12px;
+}
+.leaflet-routing-alt-minimized {
+    display: none;
+}
+.leaflet-routing-alt td{
+    padding: 0 2px 0 2px ;
+    line-height: 1.5;
+}
+.leaflet-routing-alt table{
+    margin-bottom: 0;
+}
+.leaflet-routing-alt{
+    margin-bottom: 0;
+}
+#map{
+    margin: 100px 50px
+}
