@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./topPlacesResp.css"
 import {getTopSights} from '../../api/apiRoutes';
 import LoadingBar from '../LoadingBar/LoadingBar';
+import { Link } from 'react-router-dom';
 
 export default function TopPlacesResp({id}) {
   const [topPlacesArr, setTopPlacesArr] = useState([]);
@@ -44,7 +45,7 @@ export default function TopPlacesResp({id}) {
           return (
 
             <li className='topPlacesCards' key={indx}>
-              <a href="/" class="card">
+              <Link to={`/route/src=Kolkata&dest=${spots.place}`} class="card">
                 <img src={spots.image} class="card__image" alt="" />
                 <div class="card__overlay">
                   <div class="card__header">
@@ -56,7 +57,7 @@ export default function TopPlacesResp({id}) {
                   </div>
                   <p class="card__description">{spots.desc}</p>
                 </div>
-              </a>
+              </Link>
             </li>
 
           );
