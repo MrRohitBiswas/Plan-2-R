@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a2b355c.chunk.css",
-    "main.js": "/static/js/main.f057e675.chunk.js",
-    "main.js.map": "/static/js/main.f057e675.chunk.js.map",
+    "main.css": "/static/css/main.d51e069a.chunk.css",
+    "main.js": "/static/js/main.e10f461a.chunk.js",
+    "main.js.map": "/static/js/main.e10f461a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.40345808.js",
     "runtime-main.js.map": "/static/js/runtime-main.40345808.js.map",
-    "static/js/2.27685bad.chunk.js": "/static/js/2.27685bad.chunk.js",
-    "static/js/2.27685bad.chunk.js.map": "/static/js/2.27685bad.chunk.js.map",
+    "static/js/2.e41684bb.chunk.js": "/static/js/2.e41684bb.chunk.js",
+    "static/js/2.e41684bb.chunk.js.map": "/static/js/2.e41684bb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.04a76065550ca145fa6b6982fa692f48.js": "/precache-manifest.04a76065550ca145fa6b6982fa692f48.js",
+    "precache-manifest.6ecb35958394c9bc8fbe303840fd7a26.js": "/precache-manifest.6ecb35958394c9bc8fbe303840fd7a26.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.2a2b355c.chunk.css.map": "/static/css/main.2a2b355c.chunk.css.map",
-    "static/js/2.27685bad.chunk.js.LICENSE.txt": "/static/js/2.27685bad.chunk.js.LICENSE.txt",
+    "static/css/main.d51e069a.chunk.css.map": "/static/css/main.d51e069a.chunk.css.map",
+    "static/js/2.e41684bb.chunk.js.LICENSE.txt": "/static/js/2.e41684bb.chunk.js.LICENSE.txt",
+    "static/js/main.e10f461a.chunk.js.LICENSE.txt": "/static/js/main.e10f461a.chunk.js.LICENSE.txt",
     "static/media/ArunachalPradesh.webp": "/static/media/ArunachalPradesh.2dc2df8b.webp",
     "static/media/Assam.webp": "/static/media/Assam.7c11768d.webp",
     "static/media/Bihar.webp": "/static/media/Bihar.bd8ac9eb.webp",
@@ -35,8 +36,8 @@
     "static/media/UttarPradesh.webp": "/static/media/UttarPradesh.20facea5.webp",
     "static/media/Uttarakhand.webp": "/static/media/Uttarakhand.2fb5905e.webp",
     "static/media/WestBengal.webp": "/static/media/WestBengal.e9c02421.webp",
-    "static/media/Home.css": "/static/media/bg-temp.4ee3c4bf.webp",
-    "static/media/bg.webp": "/static/media/bg.4fd11fa5.webp",
+    "static/media/Home.css": "/static/media/home-bg.28d308c7.webp",
+    "static/media/bg.jpeg": "/static/media/bg.f75e8747.jpeg",
     "static/media/style.scss": "/static/media/illustration-section-02.63d0555d.svg",
     "static/media/fav.png": "/static/media/fav.2679909f.png",
     "static/media/feature-tile-icon-01.svg": "/static/media/feature-tile-icon-01.0f9928d7.svg",
@@ -52,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.40345808.js",
-    "static/js/2.27685bad.chunk.js",
-    "static/css/main.2a2b355c.chunk.css",
-    "static/js/main.f057e675.chunk.js"
+    "static/js/2.e41684bb.chunk.js",
+    "static/css/main.d51e069a.chunk.css",
+    "static/js/main.e10f461a.chunk.js"
   ]
 }
