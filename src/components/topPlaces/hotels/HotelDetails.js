@@ -7,6 +7,7 @@ import LoadingBar from "../../LoadingBar/LoadingBar";
 import { Helmet } from "react-helmet";
 //ga
 import ReactGA from "react-ga"
+import { ConsoleWriter } from "istanbul-lib-report";
 export default function HotelDetails() {
   useEffect(() => {
     
@@ -19,19 +20,15 @@ export default function HotelDetails() {
   const [loading, setLoading] = useState(false);
 
   const [hotelsArr, setHotelsArr] = useState([]);
-
   useEffect(() => {
     let wantResults = true;
     setLoading(true);
-    console.log("UseEffect here");
     (async () => {
       const data = await getHotels(id);
       setLoading(false);
       if (wantResults) {
-        console.log(data);
         setHotelsArr(data.hotels);
       }
-      console.log(data.hotels);
     })();
 
     return () => {
@@ -58,10 +55,8 @@ export default function HotelDetails() {
             {hotelsArr.map((currHotel, indx) => {
               let cssClass;
               let imgClass;
-              let imgUrl1 =
-                "https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp";
 
-              let imgUrl = imgUrl1;
+              let imgUrl = currHotel.photoUrlMax;
               if (Math.floor(indx / 2) % 2 === 0) {
                 cssClass = "half left-arrow d-flex align-items-center";
                 imgClass = "img";
@@ -69,7 +64,11 @@ export default function HotelDetails() {
                 cssClass = "half right-arrow d-flex align-items-center";
                 imgClass = "img order-md-last";
               }
-              let featuresArr = currHotel.features.slice(0, 5);
+              let checkIn = 'Check In: '+ (currHotel.checkin.from || 'N/A') + '-' + (currHotel.checkin.until || 'N/A');
+              let checkOut = 'Check Out: '+ (currHotel.checkout.from || 'N/A') + '-' + (currHotel.checkout.until || 'N/A');
+
+
+              let featuresArr = [currHotel.distFromCityCenter, currHotel.reviewWord, checkIn, checkOut]
               while (featuresArr.length < 4) {
                 featuresArr.push(" - ");
               }
@@ -106,7 +105,7 @@ export default function HotelDetails() {
                             href="room-single.html"
                             className="btn-custom px-3 py-2"
                           >
-                            {currHotel.price || "View Room Details"}{" "}
+                            {(!currHotel.price)? "View Room Details" : 'Rs. '+ Math.floor(currHotel.price)}{" "}
                             <span className="icon-long-arrow-right" />
                           </a>
                         </p>

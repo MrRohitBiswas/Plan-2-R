@@ -44,6 +44,8 @@ export default function SearchState() {
   const history = useHistory();
 
   const searchFunc = async (e) => {
+    
+    window.scrollTo(0, 0);
     e.preventDefault();
     history.push(searchText);
   };

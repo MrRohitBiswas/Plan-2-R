@@ -44,7 +44,6 @@ async function getResponse(place, place2) {
     console.error(`HTTP error! status: ${response2.status}`);
   }
   const data2 = await response2.json();
-  // console.log('inside async');
   loc1 = { x: Number(data[0].lat), y: Number(data[0].lon) };
   loc2 = { x: Number(data2[0].lat), y: Number(data2[0].lon) };
 
@@ -56,8 +55,8 @@ async function getResponse(place, place2) {
 
   L.Routing.control({
     waypoints: [
-      L.latLng(loc2.x, loc2.y),
-      L.latLng(loc1.x, loc1.y)
+      L.latLng(loc1.x, loc1.y),
+      L.latLng(loc2.x, loc2.y)
     ]
   }).addTo(map);
 

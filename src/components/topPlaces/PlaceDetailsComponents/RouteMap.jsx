@@ -1,6 +1,13 @@
 import React, {useEffect} from 'react'
+import $ from 'jquery';
 import './RouteMap.css'
+import { useLocation } from 'react-router-dom';
+
 const RouteMap = () => {
+  
+  
+  
+  
   useEffect(() => {
     const css1 = document.createElement('link');
     css1.rel = 'stylesheet';
@@ -38,7 +45,14 @@ const RouteMap = () => {
     script4.src = '/mapScript.js';
     script4.type = 'text/javascript';
     document.body.appendChild(script4);
-  
+    
+    function addClass(){
+    $('.leaflet-routing-alt').addClass('leaflet-routing-alt-minimized');
+    
+    $('.leaflet-control').addClass('leaflet-routing-container-hide');
+    }
+    addClass();
+    
     return () => {
       document.head.removeChild(css1);
       document.head.removeChild(script1);
@@ -52,7 +66,7 @@ const RouteMap = () => {
   
   return (
     <div>
-    <div id="map" style={{height: '533px', width: '667px', zIndex: '0'}}>
+    <div id="map">
     </div>
     </div>
   )

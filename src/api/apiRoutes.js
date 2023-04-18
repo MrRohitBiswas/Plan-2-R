@@ -1,29 +1,21 @@
 export async function getTopSights(id) {
   const url = `/top-sights/?id=${id}`
   // const url = './topSights.json'
-  console.log('id:', id);
   const resp = await fetch(url);
 
-  if (resp.status === 200) {
+  if (resp.status === 200 || resp.status === 404 || resp.status === 500) {
     const data = await resp.json();
-    // console.log(data);
-    // setTopPlacesArr(data.topPlaces);
     return data;
-    // console.log(data);
   }
 }
 
 export async function getHotels(id) {
   const url = `/hotels/?id=${id}`
-  // const url = './hotels.json';
-  // console.log(id);
   const resp = await fetch(url);
 
-  if (resp.status === 200) {
+  if (resp.status === 200 || resp.status === 404 || resp.status === 500) {
     try {
       const data = await resp.json();
-      // setHotelsArr(data.hotels);
-      console.log(data);
       return data;
     } catch(err) {
 
@@ -31,13 +23,16 @@ export async function getHotels(id) {
   }
 }
 
-// export async function getHotels(id) {
-//   console.log('HOTELS');
-//   let a = await fetch('./hotels.json')
-//   let b = await a.json();
-//   console.log(b)
-//   return b;
-// }
+export async function getDesc(id) {
+  const url = `/desc/?id=${id}`
+  // const url = './topSights.json'
+  const resp = await fetch(url);
+
+  if (resp.status === 200 || resp.status === 404 || resp.status === 500) {
+    const data = await resp.json();
+    return data;
+  }
+}
 
 
 export async function signup(obj) {

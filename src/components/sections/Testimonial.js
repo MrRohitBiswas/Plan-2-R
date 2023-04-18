@@ -95,8 +95,8 @@ const Testimonial = ({
             <div className="tiles-item reveal-from-left" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — After loads of work, my wife bangs my head for another honeymoon... Tour CirKit is the reason I am still alive.
+                      <p className="text-sm mb-0">
+                      — Tour Cirkit is super nice. I love Tour Cirkit but not more than I love Ayaka.
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">

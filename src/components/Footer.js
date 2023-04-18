@@ -19,16 +19,16 @@ export default function footer() {
               <div className="">
                 <div className="footDetailsChild">
                   <h2 className="footer-heading">
-                    <a href="/Services" className="logo">
+                    <Link to="/Home" className="logo">
                       Tour CirKit
-                    </a>
-                  </h2>
                   <img
                     src={icon}
                     alt = "Icon"
                     className="siteIcon"
-                    style={{ height: 150, width: 180 }}
-                  />
+                    style={{width: '150px', height: 'auto' }}
+                    />
+                    </Link>
+                  </h2>
                   <p>
                     CirKit is always there to help you to plan the best suited tour for your journey up ahead!
                   </p>

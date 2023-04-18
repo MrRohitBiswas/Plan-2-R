@@ -1,45 +1,51 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import $ from "jquery";
-import './Navbar.css'
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+
+import "./Navbar.css";
 
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
-        $('.nav').addClass('affix');
+      $(".nav").addClass("affix");
     } else {
-        $('.nav').removeClass('affix');
+      $(".nav").removeClass("affix");
     }
-});
-  const [menuClass, setMenuClass] = useState('main_list main_list_mobile_hidden');
-  const [navClass, setNavClass] = useState('nav');
-  const [navTrig, setNavTrig] =useState('navTrigger');
+  });
+  const [menuClass, setMenuClass] = useState(
+    "main_list main_list_mobile_hidden"
+  );
+  const [navClass, setNavClass] = useState("nav");
+  const [navTrig, setNavTrig] = useState("navTrigger");
   const displayMenu = () => {
-    if (menuClass === 'main_list main_list_mobile_hidden') {
-      setMenuClass('main_list main_list_mobile')
-      setNavClass(navClass + ' affix');
-      setNavTrig(navTrig+' active');
+    if (menuClass === "main_list main_list_mobile_hidden") {
+      setMenuClass("main_list main_list_mobile");
+      disableBodyScroll(document);
+
+      setNavClass(navClass + " affix");
+      setNavTrig(navTrig + " active");
     } else {
-      setMenuClass('main_list main_list_mobile_hidden');
-      setNavClass('nav');
-      setNavTrig('navTrigger');
+      setMenuClass("main_list main_list_mobile_hidden");
+      enableBodyScroll(document);
+
+      setNavClass("nav");
+      setNavTrig("navTrigger");
     }
-  }
-  const handleClickScroll = () => {
-    
-    const element = document.getElementById('homePageStart');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  
   };
-  
-  const handleClickScrollService = () => {
-    const element = document.getElementById('serviceStates');
+  const handleClickScroll = () => {
+    const element = document.getElementById("homePageStart");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleClickScrollService = () => {
+    const element = document.getElementById("serviceStates");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
     displayMenu();
   };
@@ -47,30 +53,38 @@ export default function Navbar() {
   return (
     <>
       <nav className={navClass}>
-      {/* container-fluid */}
+        {/* container-fluid */}
         {/* <div className=""> */}
-          <div className="logo">
-            <Link to="/" onClick={handleClickScroll}>Tour CirKit</Link>
-          </div>
-          <div id="mainListDiv" className={menuClass}>
-            <ul className="navlinks">
-              <li>
-                <Link to="/Services"  onClick={handleClickScrollService}>Services</Link>
-              </li>
-              <li>
-                <Link to="/Contact" onClick={displayMenu}>Contact Us</Link>
-              </li>
-              <li>
-                <Link to="/LogReg" onClick={displayMenu}>Sign Up</Link>
-              </li>
-            </ul>
-          </div>
-          <span className={navTrig} onClick={displayMenu}>
-            <i></i>
-            <i></i>
-            <i></i>
-            {/* Hello */}
-          </span>
+        <div className="logo">
+          <Link to="/Home" onClick={handleClickScroll}>
+            Tour CirKit
+          </Link>
+        </div>
+        <div id="mainListDiv" className={menuClass}>
+          <ul className="navlinks">
+            <li>
+              <Link to="/Services" onClick={handleClickScrollService}>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/Contact" onClick={displayMenu}>
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/LogReg" onClick={displayMenu}>
+                Sign Up
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <span className={navTrig} onClick={displayMenu}>
+          <i></i>
+          <i></i>
+          <i></i>
+          {/* Hello */}
+        </span>
         {/* </div> */}
       </nav>
     </>

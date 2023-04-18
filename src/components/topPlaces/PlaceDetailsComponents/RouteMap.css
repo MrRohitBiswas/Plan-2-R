@@ -1,3 +1,4 @@
+
 .leaflet-routing-alt h2{
     margin: 0;
     line-height: 1.5;
@@ -15,9 +16,6 @@
     line-height: .8;
     font-size: 12px;
 }
-.leaflet-routing-alt-minimized {
-    display: none;
-}
 .leaflet-routing-alt td{
     padding: 0 2px 0 2px ;
     line-height: 1.5;
@@ -29,5 +27,34 @@
     margin-bottom: 0;
 }
 #map{
-    margin: 100px 50px
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+}
+.leaflet-routing-collapse-btn{
+    z-index: 2;
+    color: #000 !important;
+}
+.leaflet-routing-container-hide .leaflet-routing-collapse-btn {
+    left: -5px !important;
+    top: -4px !important;
+}
+.leaflet-routing-collapse-btn{
+    margin: 10px !important;
+}
+@media only screen and (min-width: 640px){
+    
+.leaflet-routing-collapse-btn{
+    margin-top: 5px !important;
+    margin-right: 3px !important;
+
+}
+.leaflet-routing-container-hide .leaflet-routing-collapse-btn {
+    left: -5px !important;
+    top: -8px !important;
+}
+}
+.leaflet-right .leaflet-routing-container.leaflet-routing-container-hide {
+    height: 40px !important;
+    width: 40px !important;
 }

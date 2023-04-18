@@ -3,18 +3,19 @@ import { Link } from "react-router-dom";
 import ReactGA from "react-ga";
 import $ from "jquery";
 import "./components/MainService.scss";
-import bg from "./components/bg.webp";
+import bg from "./components/bg.jpeg";
 import States from "./States";
-import HomePage from "./Home";
 import "./ServiceSearchBar.css";
 import { Helmet } from "react-helmet";
-
 export default function Services() {
 //GA
 useEffect(() => {
   ReactGA.pageview(window.location.pathname); //interaction event
 },)
 
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, []);
 
   $(".buy").click(function () {
     $(".bottom").addClass("clicked");
@@ -65,9 +66,8 @@ useEffect(() => {
       
       <Helmet>
         <title>Tour CirKit | Services</title>
-        <meta name='Services Provided' content='All services provided by us, browse sstates and search wherever you plan to travel'/>
+        <meta name='Services Provided' content='All services provided by us, browse states and search wherever you plan to travel'/>
       </Helmet>
-      <HomePage />
       <div
         className="contents"
         style={{
@@ -79,19 +79,24 @@ useEffect(() => {
         id="serviceStates"
       >
         <div className="container text" style={{
-    color: '#310909',
-    textShadow: '0 2px 1px #79a06d,-1px 3px 1px #82ad75, -2px 5px 1px #8ebf80'}}>
-          <p
+          color: '#310909',
+        }}>
+
+        <h1 style={{fontSize: '20px', lineHeight:'35px', color: 'black', marginTop:'0', paddingTop:'100px', fontWeight:'300', textAlign:'justify'}}>Search Below for the state you're looking for to travel! Whether you're seeking information of tour spots on a specific state or trying to find the holiday places of a country, the search bar is here to help. Simply type in your query and hit enter to see the results. With quick and relevant tourist places at your fingertips, finding where you want to visit has never been easier. So what are you waiting for? Start searching below!</h1>
+        <hr/>
+          <h1
             style={{
               fontSize: "40px",
               fontFamily: `Inter,sans-serif`,
-              paddingTop: "80px",
+              color:'black',
+              fontWeight:'300'
             }}
           >
             Select the state:
-          </p>
+          </h1>
           <hr/>
         </div>
+        <h1 className="container exception" style={{fontSize: '20px', lineHeight:'35px', color: 'black', fontWeight:'300', paddingBottom:'30px'}}>If your state of your country is not present here, choose any state from here, you will get a search bar in there. you can search any place over ther to get the top tour sights</h1>
         {/* searchbar */}
         <div className="serviceSearchBar">
           <form>

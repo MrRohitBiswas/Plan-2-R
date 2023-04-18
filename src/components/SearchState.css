@@ -160,6 +160,8 @@
     font-weight: 400;
     letter-spacing: -0.015em;
     outline: none;
+    text-transform: capitalize; 
+    
   }
   #search::-webkit-input-placeholder {color: #FFFFFF;}
   #search::-moz-placeholder {color: #FFFFFF;}

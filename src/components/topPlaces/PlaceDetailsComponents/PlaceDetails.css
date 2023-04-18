@@ -1,0 +1,54 @@
+.image {
+    height: 60vh;
+    width: 50vw;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 60vh;
+}
+
+.desc {
+    width: 50vw;
+
+    height: 60vh;
+}
+
+.heading {
+    padding-left: 30px;
+    font-size: 6vmin;
+    line-height: 10vmin;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 50%;
+    padding-top: 15%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 420px) {
+    .heading {
+        padding-top: 75px;
+    padding-left: 10px;
+    display: table-caption;
+
+    }
+}
+
+.description {
+    padding: 10px;
+    text-align: justify;
+    font-size: 3vmin;
+    line-height: initial;
+    margin: calc(2vh + 2vw) auto 0 auto;
+    height: 60%;
+    display: table-cell;
+    position: absolute;
+
+}

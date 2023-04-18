@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './LoadingBar.css'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+
 export default function LoadingBar() {
+  useEffect(() => {
+    disableBodyScroll(document)
+    return () => {
+      enableBodyScroll(document)
+    }
+  }, [])
+  
   return (
     <div className="loadBody">
       <div id="load">
