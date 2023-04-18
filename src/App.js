@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Switch} from 'react-router-dom';
+import { Switch} from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
@@ -8,6 +8,11 @@ import LogReg from './components/LogReg';
 import SearchState from './components/SearchState';
 import HotelDetails from './components/topPlaces/hotels/HotelDetails';
 import PlaceDetails from './components/topPlaces/PlaceDetailsComponents/PlaceDetails';
+import Feed from './components/feed/Feed';
+import NLPSearch from './components/nlpSearch/NLPSearch';
+
+import Home from './components/Home';
+
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -33,7 +38,8 @@ const App = () => {
       </Helmet>
      <Navbar title="Tour CirKit" />
         <Switch>
-          <AppRoute exact path="/" component={Services} />
+          <AppRoute exact path="/Home" component={Home} />
+          <AppRoute exact path="/" component={Home} />
 
           <AppRoute exact path="/Contact" component={ContactUsEntry} layout={LayoutDefault} />
           <AppRoute exact path="/Services" component={Services}/>
@@ -41,6 +47,8 @@ const App = () => {
           <AppRoute exact path="/SearchState/:id" component={SearchState} layout={LayoutDefault}/>
           <AppRoute exact path="/HotelDetails/:id" component={HotelDetails}/>
           <AppRoute exact path="/route/:id" component={PlaceDetails}/>
+          <AppRoute exact path="/Feed" component={Feed}/>
+          <AppRoute exact path="/Search" component={NLPSearch}/>
 
           
         </Switch>
