@@ -13,7 +13,7 @@ export default function SearchBar() {
     
     window.scrollTo(0, 0);
     e.preventDefault();
-    history.push(SearchText);
+    history.push('/search/' + SearchText);
   };
   return (
     <div>
@@ -27,9 +27,9 @@ export default function SearchBar() {
       <p className="examples">
         For example,
         <br/>
-        "Hill Views in Darjeeling" <br/>
-        "Beaches with Hotels" <br />
-        "Historical Monuments in Kolkata" <br />
+        "Hill Views" <br/>
+        "Sea Beaches" <br />
+        "Historical Monuments" <br />
       </p>
       <div class="search-bar">
         <form action="" onSubmit={searchFunc}>

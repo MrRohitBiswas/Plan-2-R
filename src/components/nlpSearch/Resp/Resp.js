@@ -6,7 +6,7 @@ export default function Resp(loc) {
   
   const location = useLocation();
   const keyword = location.pathname.replace("/search/", "");
-  const url = `https://tourcirkit.com/search2?id=${encodeURIComponent(keyword)}`;
+  const url = `/search2?id=${encodeURIComponent(keyword)}`;
   const [isLoading, setIsLoading] = useState(false);
   const [res, setRes] = useState([]);
     
