@@ -63,6 +63,9 @@ export default function SearchState() {
         {State && <SearchStateCarousel slides={State.slides || null} />}
       </div>
       <>
+      <div className="container">
+        <h1 className="searchTitle">Can not find your place in the list below? Search here with the nearest city to give you the top tour spots available</h1>
+      </div>
         <div className="SearchContainer ">
           <div className="Search-box">
             <div className="Search-icon">
@@ -99,6 +102,9 @@ export default function SearchState() {
             </form>
           </div>
         </div>
+        
+        
+        <h1 className="searchTitle" style={{marginTop:'30px'}}>Unable to remember the name of your fabulous place? <Link to = '/Search' style={{color:'#cccc16'}}>Click here</Link> to take you to the advanced search page</h1>
       </>
       <div>
         <TopPlacesResp id={loc} />

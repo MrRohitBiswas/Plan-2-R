@@ -30,7 +30,6 @@ export default function HotelDetails() {
         setHotelsArr(data.hotels);
       }
     })();
-
     return () => {
       wantResults = false;
       setLoading(false);
@@ -102,7 +101,8 @@ export default function HotelDetails() {
                         </ul>
                         <p className="pt-1">
                           <a
-                            href="room-single.html"
+                            href={currHotel.url}
+                            target="_blank"
                             className="btn-custom px-3 py-2"
                           >
                             {(!currHotel.price)? "View Room Details" : 'Rs. '+ Math.floor(currHotel.price)}{" "}

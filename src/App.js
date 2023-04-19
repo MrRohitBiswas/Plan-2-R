@@ -48,7 +48,9 @@ const App = () => {
           <AppRoute exact path="/HotelDetails/:id" component={HotelDetails}/>
           <AppRoute exact path="/route/:id" component={PlaceDetails}/>
           <AppRoute exact path="/Feed" component={Feed}/>
+          <AppRoute exact path="/Search/:id" component={NLPSearch}/>
           <AppRoute exact path="/Search" component={NLPSearch}/>
+
 
           
         </Switch>

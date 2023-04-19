@@ -1,5 +1,6 @@
 .search-bar {
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,5 +37,15 @@
   .fa-search {
     color: #333;
     font-size: 20px;
+  }
+  .nlpsearchHeading{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-top: 100px;
+  }
+    .examples {
+      font-style: oblique;
+      color: #929090a3;
   }
   

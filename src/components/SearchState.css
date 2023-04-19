@@ -39,7 +39,7 @@
   }
   .SearchContainer {
     position: relative;
-    margin: calc(75px + 2vh + 2vw) auto 0 auto;
+    margin: calc(10px + 2vh + 2vw) auto 0 auto;
     padding: 0;
     width: 100%;
     max-width: 840px;
@@ -162,6 +162,14 @@
     outline: none;
     text-transform: capitalize; 
     
+  }
+  .searchTitle{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin: calc(70px + 2vh + 2vw) auto 0 auto;
+    line-height: 2;
+
   }
   #search::-webkit-input-placeholder {color: #FFFFFF;}
   #search::-moz-placeholder {color: #FFFFFF;}
