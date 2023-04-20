@@ -100,7 +100,6 @@ export default function Weather(place) {
       setResponse2(resp2);
       let res3 = func1(results.days.slice(1, 4));
       setResponse3(res3);
-      console.log(response3);
       setdirDeg(Math.round(results.currentConditions.winddir / 22.5));
       let url = results.currentConditions.icon;
       setimg(url);

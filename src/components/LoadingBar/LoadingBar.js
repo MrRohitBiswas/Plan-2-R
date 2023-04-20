@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import './LoadingBar.css'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-
+import gif from './loadingBall.gif'
 export default function LoadingBar() {
   useEffect(() => {
     disableBodyScroll(document)
@@ -10,9 +10,15 @@ export default function LoadingBar() {
     }
   }, [])
   
+    //REMOVE INLINE CSS BEFORE FIXING
+
+
   return (
-    <div className="loadBody">
-      <div id="load">
+    <div className="loadBody" style={{
+      background: 'rgba(0,0,0,0)',
+      height: 'max-content'
+    }}>
+      {/* <div id="load">
         <div>G</div>
         <div>N</div>
         <div>I</div>
@@ -20,7 +26,10 @@ export default function LoadingBar() {
         <div>A</div>
         <div>O</div>
         <div>L</div>
-      </div>
+      </div> */}
+      <img src={gif} alt="loading" style={{
+        margin: 'auto'
+      }}/>
     </div>
   );
 }

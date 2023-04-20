@@ -134,6 +134,7 @@ useEffect(() => {
           }}
         >
           {States.map((CurrState) => {
+            {console.log(CurrState)}
             return (
               <div key={CurrState.key} className="wrapper my-3">
                 <Link
