@@ -9,8 +9,10 @@ class SignUpForm extends Component {
     this.state = {
       email: "",
       password: "",
+      cPassword: "",
       name: "",
-      hasAgreed: false
+      hasAgreed: false,
+      passMisMatch: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -23,12 +25,51 @@ class SignUpForm extends Component {
     let name = target.name;
 
     this.setState({
-      [name]: value
+      [name]: value,
+      passMisMatch: false
     });
   }
 
-  handleSubmit(e) {
+  async handleSubmit(e) {
     e.preventDefault();
+
+    //  If passwords don't match return
+    if (this.state.password !== this.state.cPassword) {
+      this.setState({
+        passMisMatch: true
+      })
+      return;
+    }
+
+    const authObj = {
+      email: this.state.email,
+      name: this.state.name,
+      password: this.state.password
+    }
+
+    // if any field is empty then return
+    if (!authObj.email || !authObj.name || !authObj.password) {
+      return;
+    }
+
+    // call api
+
+    const url = '/auth/signup'
+
+    const resp = await fetch(url, {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(authObj)
+    });
+
+    const data = await resp.json();
+
+    console.log(data);
+    
+
+    console.log(this.state)
 
   }
 
@@ -89,16 +130,16 @@ class SignUpForm extends Component {
             </label>
             <input
               type="password"
-              id="password"
+              id="cPassword"
               className="formFieldInput"
               placeholder="Enter password again"
-              name="password"
-              value={this.state.password}
+              name="cPassword"
+              value={this.state.cPassword}
               onChange={this.handleChange}
             />
           </div>
 
-          <div className="formField">
+          {/* <div className="formField">
             <label className="formFieldCheckboxLabel">
               <input
                 className="formFieldCheckbox"
@@ -112,7 +153,12 @@ class SignUpForm extends Component {
                 terms of service
               </a>
             </label>
-          </div>
+          </div> */}
+
+          {
+            this.state.passMisMatch &&
+          <div>Passwords don't match</div>
+          }
 
           <div className="formField">
             <button className="formFieldButton">Sign Up</button>{" "}
