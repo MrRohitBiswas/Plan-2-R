@@ -133,7 +133,7 @@ export default function Weather(place) {
       {load ? (
         <Loading />
       ) : !isOk ? (
-        <h3 style={{color: 'black'}}>Sorry No Weather Details Found :&#40; [Err:400]</h3>
+        <h3 style={{color: 'black', textAlign: 'center', fontWeight:'400'}}>Sorry No Weather Details Found :&#40;</h3>
       ) : (
         <>
           <div className="row">

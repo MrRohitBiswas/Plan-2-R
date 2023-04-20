@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch} from 'react-router-dom';
+import {Redirect, Switch} from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
@@ -23,6 +23,7 @@ import ContactUsEntry from './ContactUsEntry';
 import { Helmet } from 'react-helmet';
 // Initialize Google Analytics
 import ReactGA from 'react-ga';
+import notFound from './404/notFound';
 const msr_iD ="G-1Y51BD6TYZ"; //measurement id
 ReactGA.initialize(msr_iD);
 
@@ -50,7 +51,9 @@ const App = () => {
           <AppRoute exact path="/Feed" component={Feed}/>
           <AppRoute exact path="/Search/:id" component={NLPSearch}/>
           <AppRoute exact path="/Search" component={NLPSearch}/>
-
+          <AppRoute exact path="/404" component={notFound}/>
+          
+          <Redirect to="/404" />
 
           
         </Switch>

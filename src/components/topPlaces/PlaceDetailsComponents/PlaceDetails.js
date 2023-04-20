@@ -38,14 +38,11 @@ export default function PlaceDetails(params) {
   }, []);
 
 
-  const [desc, setDesc] = useState([]);
-
+  const [desc, setDesc] = useState();
   useEffect(() => {
 
-    console.log('Render', desc);
 
     const url = window.location.href;
-    // http://localhost:3000/route/src=West%20Bengal&dest=Victoria%20Memorial,%20West%20Bengal
     let tmp = url.split('/src=')[1];
     if (!tmp) {
       console.log('Wrong url');
@@ -53,20 +50,26 @@ export default function PlaceDetails(params) {
     }
 
     tmp = tmp.split('&dest=');
-    let dest = tmp[1];
-
+    let tmp1= tmp[1].split(',');
+    let dest = tmp1[0];
     if (!dest) {
       console.log('Wrong url');
       return;
     }
 
-    (async () => {
-      let data = await getDesc(dest);
-      setDesc(data.desc);
-      // console.log(data.desc);
-    })();
+    async function fetchData() {
+      try {
+        const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${dest}`);
+        const data = await response.json();
+        setDesc(data.extract);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    
+    fetchData();
+    
 
-    console.log(dest);
   }, [])
 
   let path = window.location.pathname;
@@ -88,6 +91,8 @@ export default function PlaceDetails(params) {
     document.querySelector("#map").innerHTML = "Error";
   }
   let result = startAddr.replaceAll(/%20/g, " ");
+  let heading = result.split(',');
+  heading = heading[0];
   return (
     <>
       <Helmet>
@@ -109,11 +114,10 @@ export default function PlaceDetails(params) {
               }}
             ></div>
             <div className="desc">
-            <h2 className="heading">{result}</h2>
+            <h2 className="heading">{heading}</h2>
             <div className="description">
-              {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero velit dolorum ipsa autem dolor modi et rerum, repellat est nobis quo atque, in voluptatem esse? Ratione alias assumenda ipsam nemo. */}
-              {/* Loading */}
-              {desc[1]}
+              
+              {desc}
             </div>
             </div>
           </div>

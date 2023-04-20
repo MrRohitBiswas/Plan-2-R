@@ -58,13 +58,13 @@ export default function Resp(loc) {
                   <div className="resLinks">
                     
                     <p class="resLinksChild lr" >
-                      <Link to={{pathname: `/route/src=${spots.City}&dest=${spots.Place + ','}%20${spots.City}`, imgUrl: `${logo}`}}>
+                      <Link to={{pathname: `/route/src=${spots.City}&dest=${spots.Place + ','}%20${spots.City}`, imgUrl: `${logo}`}} style={{color:'#9188ae'}}>
                         Details
                         </Link>
                         </p>
                     
                     <p class="resLinksChild rr">
-                      <Link to={`/HotelDetails/${spots.City}`}>
+                      <Link to={`/HotelDetails/${spots.City}`} style={{color:'#9188ae'}}>
                     Hotels
                     </Link>
                     </p>
