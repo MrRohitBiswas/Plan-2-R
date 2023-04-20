@@ -1,0 +1,5 @@
+.nlpsearchmain {
+    background-color: #000000;
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 6px), repeating-linear-gradient(#1f1f1f55, #1f1f1f);
+}

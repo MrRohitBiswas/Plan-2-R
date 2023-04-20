@@ -1,0 +1,33 @@
+.resList{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+
+}
+.resLinks {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-end; */
+    position: static;
+}
+.resLinksChild{
+    margin-bottom: 10px !important;
+    position: absolute;
+    bottom: 0;
+}
+.lr{
+    left: 0;
+    margin-left: 15px;
+}
+.rr{
+    right: 0;
+    margin-right: 15px;
+
+}
