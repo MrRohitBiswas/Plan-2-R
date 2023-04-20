@@ -32,6 +32,26 @@ class SignInForm extends Component {
   async handleSubmit(event) {
     event.preventDefault();
 
+    const authObj = {...this.state};
+
+    if (!authObj.email || !authObj.password) {
+      return;
+    }
+
+    const url = '/auth/login';
+
+    const resp = await fetch(url, {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(authObj)
+    });
+
+    const data = await resp.json();
+
+    console.log(data);
+
   }
 
   render() {
@@ -84,7 +104,7 @@ class SignInForm extends Component {
             </Link>
           </div>
 
-          <div className="socialMediaButtons">
+          {/* <div className="socialMediaButtons">
             <div className="facebookButton">
               <FacebookLoginButton
                 onClick={() => alert("Hello")}
@@ -120,7 +140,7 @@ class SignInForm extends Component {
                 }}
               />
             </div>
-          </div>
+          </div> */}
         </form>
       </div>
     );
