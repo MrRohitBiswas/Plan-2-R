@@ -1,23 +1,21 @@
 function getBotResponse(input) {
     function sendMail(email){
 
-      fetch('/sendMail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'text/plain'
-        },
-        body: email
-      })
-      .then(response => {
-        if (response.ok) {
-          console.log('String sent to server successfully!');
-        } else {
-          console.log('Failed to send string to server.');
-        }
-      })
-      .catch(error => {
-        console.log('Error:', error);
-      });
+      fetch(`/sendMail?email=${email}`)
+  .then(response => {
+    if (response.ok) {
+      return response.text();
+    } else {
+      throw new Error('Error: ' + response.status);
+    }
+  })
+  .then(data => {
+    console.log('Response:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error.message);
+  });
+
     }
 
 
