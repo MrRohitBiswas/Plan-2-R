@@ -1,6 +1,6 @@
 async function getBotResponse(input) {
   function sendMail(email) {
-    fetch(`/sendMail?email=${email}`)
+    fetch(`/send-mail/?email=${email}`)
       .then((response) => {
         if (response.ok) {
           return response.text();
@@ -54,16 +54,7 @@ async function getBotResponse(input) {
     return `${
       input.charAt(0).toUpperCase() + input.slice(1)
     }! How can I assist you today?`;
-  } else if (/\b(hotel|hotels|stays|stay|flat|flats|rent|rents|rooms|appartments|appartment|room)\b/i.test(input)) {
-    return 'Please write the name of the place/city next whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
-  } else if (input) {
-    const placeUrl = await hasPlace(input.toLowerCase());
-    console.log(placeUrl);
-    let res = `Thank you for your inquiry! We have a wide range of detailed information about various places. Click <a  href='${placeUrl}' style="color:blue;">here</a> to go to your desired location`;
-    if (placeUrl) {
-      return res;
-    }
-  }else if (
+  } else if (
     /services|service|offer|offerings|advantages|benefits|options|option|programs|program|packages|package|deliver|deliverable|treatment|deliveries|intervention|performance|task|duties|duty|assignment|job|project|engagement|contract|output|caregiving|supervision|attendance|expertise|consultation|advisory|guidance|management|solution/i.test(
       input
     )
@@ -86,7 +77,16 @@ async function getBotResponse(input) {
     /top|best|place|hill|beach|historical|cheap|lovely|view|tour/i.test(input)
   ) {
     return `Sure! I can help you with that. Please click on this <a href='https://www.tourcirkit.com/search/${input}' style="color:blue;">link</a> to navigate.`;
-  } else {
+  } else if (input) {
+    const placeUrl = await hasPlace(input.toLowerCase());
+    console.log(placeUrl);
+    let res = `Thank you for your inquiry! We have a wide range of detailed information about various places. Click <a  href='${placeUrl}' style="color:blue;">here</a> to go to your desired location`;
+    if (placeUrl) {
+      return res;
+    }
+  } else if (/\b(hotel|hotels|stays|stay|flat|flats|rent|rents|rooms|appartments|appartment|room)\b/i.test(input)) {
+    return 'Please write the name of the place/city next whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
+  }else {
     return "Try asking something else!";
   }
 }
