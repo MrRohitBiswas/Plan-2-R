@@ -54,8 +54,8 @@ async function getBotResponse(input) {
     return `${
       input.charAt(0).toUpperCase() + input.slice(1)
     }! How can I assist you today?`;
-  } else if (/hotel|stay|flat|rent|appartment|room/i.test(input)) {
-    return 'Please write the name of the place/city whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
+  } else if (/\b(hotel|hotels|stays|stay|flat|flats|rent|rents|rooms|appartments|appartment|room)\b/i.test(input)) {
+    return 'Please write the name of the place/city next whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
   } else if (input) {
     const placeUrl = await hasPlace(input.toLowerCase());
     console.log(placeUrl);
