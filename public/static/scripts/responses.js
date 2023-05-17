@@ -54,6 +54,8 @@ async function getBotResponse(input) {
     return `${
       input.charAt(0).toUpperCase() + input.slice(1)
     }! How can I assist you today?`;
+  } else if (/hotel|stay|flat|rent|appartment|room/i.test(input)) {
+    return 'Please write the name of the place/city whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
   } else if (input) {
     const placeUrl = await hasPlace(input.toLowerCase());
     console.log(placeUrl);
@@ -61,8 +63,6 @@ async function getBotResponse(input) {
     if (placeUrl) {
       return res;
     }
-  } else if (/hotel|stay|flat|rent|appartment|room/i.test(input)) {
-    return 'Please write the name of the place/city whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
   }else if (
     /services|service|offer|offerings|advantages|benefits|options|option|programs|program|packages|package|deliver|deliverable|treatment|deliveries|intervention|performance|task|duties|duty|assignment|job|project|engagement|contract|output|caregiving|supervision|attendance|expertise|consultation|advisory|guidance|management|solution/i.test(
       input
