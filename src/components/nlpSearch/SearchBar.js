@@ -15,6 +15,25 @@ export default function SearchBar() {
     e.preventDefault();
     history.push('/search/' + SearchText);
   };
+
+  
+  const startSpeechRecognition = (e) => {
+    const recognition = new window.webkitSpeechRecognition();
+
+    recognition.start();
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      setSearchText(transcript)
+      window.scrollTo(0, 0);
+    history.push('/search/' + transcript);
+      
+    };
+
+    recognition.onerror = (event) => {
+      console.error("Speech recognition error:", event.error);
+    };
+  };
   return (
     <div>
      
@@ -39,6 +58,19 @@ export default function SearchBar() {
           <i class="fa fa-search"></i>
         </button>
         </form>
+        
+        <button
+              onClick={startSpeechRecognition}
+              style={{
+                color: "white",
+                border: "1px white solid",
+                padding: "15px",
+                margin: "30px",
+              }}
+              >
+              
+              Speak <i class="fa fa-microphone"></i>
+            </button>
       </div>
         <Resp />
     </div>

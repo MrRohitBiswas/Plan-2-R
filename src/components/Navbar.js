@@ -72,11 +72,11 @@ export default function Navbar() {
                 Contact Us
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/LogReg" onClick={displayMenu}>
                 Sign Up
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <span className={navTrig} onClick={displayMenu}>

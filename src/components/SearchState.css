@@ -150,7 +150,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 78%;
     border-radius: 120px;
     border: none;
     background: rgba(255,255,255,0);
@@ -177,4 +177,18 @@
   #search:-moz-placeholder {color: #FFFFFF;}
   #search::-moz-selection {color: #FFFFFF; background: rgba(0,0,0,0.25);}
   #search::selection {color: #FFFF00; background: rgba(0,0,0,0.25);}
+  .speakForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: fit-content;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.voicebtn:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
   
+
+}
