@@ -49,9 +49,11 @@ async function getBotResponse(input) {
 
   if (/love tour cirkit|&#128150;/i.test(input)) {
     return "We're glad to hear that you love Tour Cirkit! We strive to provide the best travel experiences. How can I assist you further?";
-  }else if (/hotel|stay|flat|rent|appartment|room/i.test(input)) {
-    return 'Please write the name of the place/city whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
   }  else if (/^(hi|hello|hey|greetings|salut|hola)$/i.test(input)) {
+    
+    return `${
+      input.charAt(0).toUpperCase() + input.slice(1)
+    }! How can I assist you today?`;
   } else if (input) {
     const placeUrl = await hasPlace(input.toLowerCase());
     console.log(placeUrl);
@@ -59,10 +61,9 @@ async function getBotResponse(input) {
     if (placeUrl) {
       return res;
     }
-    return `${
-      input.charAt(0).toUpperCase() + input.slice(1)
-    }! How can I assist you today?`;
-  } else if (
+  } else if (/hotel|stay|flat|rent|appartment|room/i.test(input)) {
+    return 'Please write the name of the place/city whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
+  }else if (
     /services|service|offer|offerings|advantages|benefits|options|option|programs|program|packages|package|deliver|deliverable|treatment|deliveries|intervention|performance|task|duties|duty|assignment|job|project|engagement|contract|output|caregiving|supervision|attendance|expertise|consultation|advisory|guidance|management|solution/i.test(
       input
     )
