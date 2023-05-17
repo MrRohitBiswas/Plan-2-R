@@ -65,7 +65,7 @@ async function getBotResponse(input) {
       input
     )
   ) {
-    return "We value your interest! Please provide your email, and our team will be happy to connect with you shortly. You can also reach out to us at <a href='https://www.tourcirkit.com/Contact'>Contact Us</a> for immediate assistance.";
+    return "We value your interest! Please provide your email, and our team will be happy to connect with you shortly. You can also reach out to us at <a href='https://www.tourcirkit.com/Contact'  style='color:blue;'>Contact Us</a> for immediate assistance.";
   } else if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(input)) {
     sendMail(input);
     return "You should receive an email from us &#128512;";
