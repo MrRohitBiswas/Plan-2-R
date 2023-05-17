@@ -49,7 +49,7 @@ async function getBotResponse(input) {
 
   if (/love tour cirkit|&#128150;/i.test(input)) {
     return "We're glad to hear that you love Tour Cirkit! We strive to provide the best travel experiences. How can I assist you further?";
-  }else if (/^(hotel|stay|flat|rent|appartment|room)$/i.test(input)) {
+  }else if (/hotel|stay|flat|rent|appartment|room/i.test(input)) {
     return 'Please write the name of the place/city whose hotels you want to enquire, we will provide all details of the place as well as of the hotels';
   }  else if (/^(hi|hello|hey|greetings|salut|hola)$/i.test(input)) {
   } else if (input) {
